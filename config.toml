@@ -1,0 +1,44 @@
+baseURL = "https://xor-gate.org/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Xor-Gate Engineering Adventures"
+theme = "cupper-hugo-theme"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[imaging]
+  quality = 99
+
+[params]
+  description = ""
+  homeMetaContent = ""
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/xor-gate/xor-gate.org-theme)."
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "Jan 2, 2006"
+  codePenUser = "someUser"
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.nav]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.nav]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
