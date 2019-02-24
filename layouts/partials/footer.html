@@ -14,26 +14,4 @@
   <span>
     Source on <a class="theme-link" href="https://github.com/xor-gate/xor-gate.org">Github</a>
   </span>
-
-  <span class="copyright-year">
-    {{- $current := now.Format "2006" }}
-    &copy;
-    {{ if ne .Site.Params.since $current }}
-      {{ .Site.Params.since }} -
-    {{ end }}
-    {{- $current }}
-    {{- if or .Site.Copyright .Site.Author.name -}}
-      <span class="author">
-        {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
-        {{ else }}{{ .Site.Author.name | safeHTML }}
-        {{ end }}
-      </span>
-    {{- end -}}
-  </span>
-
-  {{ if .Site.Params.customFooter }}
-    <span>
-      {{ .Site.Params.customFooter }}
-    </span>
-  {{ end }}
 </div>
