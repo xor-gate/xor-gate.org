@@ -1,0 +1,19 @@
+{{ define "content" -}}
+<article class="post bg-white">
+
+  <!-- Content -->
+  <div class="post-content">
+      {{ .Content }}
+  </div>
+
+  <!-- Copyright -->
+  {{ partial "post/copyright.html" . }}
+
+  <!-- Reward -->
+  {{ partial "post/reward.html" . }}
+</article>
+
+<!-- Comments -->
+{{ partial "comments.html" . }}
+
+{{- end }}
