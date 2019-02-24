@@ -16,9 +16,9 @@ theme = "cupper-hugo-theme"
 [params]
   description = ""
   homeMetaContent = ""
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/xor-gate/xor-gate.org-theme)."
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/xor-gate/xor-gate.org-theme). Source on [Github](https://github.com/xor-gate/xor-gate.org)."
   # For more date formats see https://gohugo.io/functions/format/
-  dateFormat = "Jan 2, 2006"
+  dateFormat = "Monday, January 2, 2006"
   codePenUser = "someUser"
 
 [menu]
