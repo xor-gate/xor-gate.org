@@ -12,7 +12,7 @@ hasCJKLanguage = false     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+googleAnalytics = "UA-76221317-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
