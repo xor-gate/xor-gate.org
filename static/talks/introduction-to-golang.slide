@@ -3,8 +3,8 @@ As an alternative to C & C++
 12 Sep 2019
 Tags: golang, c, c++
 
-Jerry Jacobs
-Software Engineer, Heliox
+[[https://linkedin.com/in/xorgate][Jerry Jacobs]]
+Software Engineer, [[https://heliox.nl][Heliox]]
 jerry.jacobs@heliox.nl
 https://xor-gate.org
 
@@ -55,3 +55,6 @@ Run the program:
 
 - [[https://try.golang.org][try.golang.org]]
 - [[https://blog.golang.org][blog.golang.org]]
+- [[https://github.com/avelino/awesome-go][github.com/avelino/awesome-go]]
+- [[https://www.golang-book.com/books/intro][An Introduction to Programming in Go]]
+- [[https://youtube.com/c/justforfunc][JustForFunc: Programming in Go]]
