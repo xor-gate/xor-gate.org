@@ -1,0 +1,57 @@
+Introduction to Golang
+As an alternative to C & C++
+12 Sep 2019
+Tags: golang, c, c++
+
+Jerry Jacobs
+Software Engineer, Heliox
+jerry.jacobs@heliox.nl
+https://xor-gate.org
+
+* Introducing myself
+
+- 
+
+* History
+
+Between 2007 and 2012
+
+- Project starts at Google in 2007 (by Griesemer, Pike, Thompson)
+- Open source release in November 2009
+- More than 250 contributors join the project
+- Version 1.0 release in March 2012
+
+2018 and beyond
+
+- [[https://blog.golang.org/go2-here-we-come][Go 2 announced]] in November 2018
+- Version 1.13 release in September 2019 
+
+* Features
+
+- Simple language, easy to read and easy to write
+- [[https://en.wikipedia.org/wiki/Type_system#Static_type_checking][Staticly typed]] and compiled (no [[https://en.wikipedia.org/wiki/Virtual_machine][VM]], like Java or Python)
+- [[https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)][Garbage collected]]
+- Cross-compile is easy: [[https://github.com/golang/go/wiki/GoArm][GOARCH=arm GOOS=linux]]
+- No undefined behaviours (compared to C/C++)
+
+* Modern programming practices
+
+The toolchain contains support for modern programming practices
+
+- Documentation ([[https://golang.org/pkg/cmd/go/internal/doc/][go doc]])
+- Unit testing ([[https://golang.org/pkg/cmd/go/internal/test/][go test]])
+- Performance benchmarking ([[https://golang.org/pkg/cmd/go/internal/test/][go test -bench]])
+- Code generation ([[https://golang.org/pkg/cmd/go/internal/generate/][go generate]])
+
+* Hello World!
+
+.code introduction-to-golang/hello.go
+
+Run the program:
+
+  $ go run hello.go
+
+* Quicklinks
+
+- [[https://try.golang.org][try.golang.org]]
+- [[https://blog.golang.org][blog.golang.org]]
