@@ -12,6 +12,12 @@ https://xor-gate.org
 
 - 
 
+* Agenda
+
+- History
+- Introduction of the language
+- Examples
+
 * History
 
 Between 2007 and 2012
@@ -26,22 +32,33 @@ Between 2007 and 2012
 - [[https://blog.golang.org/go2-here-we-come][Go 2 announced]] in November 2018
 - Version 1.13 release in September 2019 
 
-* Features
+* Language features
 
-- Simple language, easy to read and easy to write
+- [[https://www.youtube.com/watch?v=rFejpH_tAHM][Simple language]], easy to read and easy to write: [[https://talks.golang.org/2015/simplicity-is-complicated.slide][Simplicity!]].
 - [[https://en.wikipedia.org/wiki/Type_system#Static_type_checking][Staticly typed]] and compiled (no [[https://en.wikipedia.org/wiki/Virtual_machine][VM]], like Java or Python)
 - [[https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)][Garbage collected]]
 - Cross-compile is easy: [[https://github.com/golang/go/wiki/GoArm][GOARCH=arm GOOS=linux]]
 - No undefined behaviours (compared to C/C++)
+- Open Source
 
 * Modern programming practices
 
-The toolchain contains support for modern programming practices
+The language and toolchain contains support for modern programming practices
 
 - Documentation ([[https://golang.org/pkg/cmd/go/internal/doc/][go doc]])
 - Unit testing ([[https://golang.org/pkg/cmd/go/internal/test/][go test]])
 - Performance benchmarking ([[https://golang.org/pkg/cmd/go/internal/test/][go test -bench]])
+- [[https://en.wikipedia.org/wiki/Race_condition][Race condition]] testing ([[https://golang.org/pkg/cmd/go/internal/test/][go test -race]])
 - Code generation ([[https://golang.org/pkg/cmd/go/internal/generate/][go generate]])
+
+* Pros and cons compared to C/C++
+
+*Pros*
+- Modern simple language
+- No undefined behaviour
+*Cons*
+- Not designed for deep embedded systems (needs an OS)
+- Runtime runs only on latest supported OS
 
 * Hello World!
 
@@ -50,6 +67,15 @@ The toolchain contains support for modern programming practices
 Run the program:
 
   $ go run hello.go
+
+* Golang for embedded systems/microcontrollers?
+
+As Go is not original designed for microcontrollers. There are some efforts to run it on AVR and ARM.
+
+- https://tinygo.org
+- https://gobot.io/
+- https://embd.kidoman.io
+- https://github.com/ziutek/emgo?
 
 * Quicklinks
 
