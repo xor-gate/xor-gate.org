@@ -31,53 +31,30 @@ jerry.jacobs@heliox.nl
 
 * History
 
-Between 2007 and 2012
-
-- Project starts at Google in 2007 (by Griesemer, Pike, Thompson)
-- Open source release in November 2009 ([[https://www.youtube.com/watch?v=rKnDgT73v8s][youtube]]/[[https://talks.golang.org/2009/go_talk-20091030.pdf][slides]])
-- More than 250 contributors join the project
-- Version 1.0 release in March 2012
-
-2018 and beyond
-
-- [[https://blog.golang.org/go2-here-we-come][Go 2 announced]] in November 2018
-- Version 1.13 release in September 2019 
-- Solved the dependency management problem after many years
-
-* Construction speed
-
-- It takes too long to build software (minutes to hours)
-- The tools are slow and are getting slower
-- Dependencies are uncontrolled
-- Machines have stopped getting faster
-- Yet software still grows and grows
-- If we stay as we are, before long software construction will be unbearably slow
+.image introduction-to-golang/golang-history-timeline.svg
 
 * Why a new language?
 
-- These problems are endemic and linguistic.
-- New libraries won’t help (C++14/17 etcetera).
-- Adding anything is going in the wrong direction.
-- Need to start over, thinking about the way programs are written and constructed.
-
-* Language goals
-
-- The efficiency of a statically-typed compiled language with the ease of programming of a dynamic language
-- Safety: type-safe and memory-safe
-- Good support for concurrency and communication
-- Efficient, latency-free garbage collection
-- High-speed compilation
+- Long build times
+- Tools are slow
+- Dependencies are uncontrolled
+- Machines have stopped getting faster
+- Language bloat
 
 * Language features
 
-- [[https://www.youtube.com/watch?v=rFejpH_tAHM][Simple language]], easy to read and easy to write: [[https://talks.golang.org/2015/simplicity-is-complicated.slide][Simplicity!]].
-- [[https://en.wikipedia.org/wiki/Type_system#Static_type_checking][Staticly typed]] and staticly compiled (no "slow" [[https://en.wikipedia.org/wiki/Virtual_machine][VM]], like Java or Python)
-- [[https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)][Garbage collected]]
-- Cross-compile is easy: [[https://github.com/golang/go/wiki/GoArm][GOARCH=arm GOOS=linux]]
-- No undefined behaviours (compared to C/C++)
 - Open Source
+- High-speed compilation
+- The efficiency of a statically-typed compiled language with the ease of programming of a dynamic language
+- [[https://www.youtube.com/watch?v=rFejpH_tAHM][Simple language]], easy to read and easy to write: [[https://talks.golang.org/2015/simplicity-is-complicated.slide][Simplicity!]].
+- No libc (or libc++)
+- [[https://en.wikipedia.org/wiki/Type_system#Static_type_checking][Staticly typed]] and staticly compiled (no "slow" [[https://en.wikipedia.org/wiki/Virtual_machine][VM]], like Java or Python)
+- Safety: type-safe and memory-safe
+- Good support for [[https://www.youtube.com/watch?v=cN_DpYBzKso][concurrency]] and communication
+- Efficient, latency-free [[https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)][garbage collection]]
+- Cross-compile is easy: [[https://github.com/golang/go/wiki/GoArm][GOARCH=arm GOOS=linux]]
 
-* Modern programming practices
+* Modern software practices
 
 The language and toolchain contains support for modern programming practices
 
@@ -89,7 +66,7 @@ The language and toolchain contains support for modern programming practices
 
 * Hello World!
 
-.code introduction-to-golang/hello.go
+.code -numbers introduction-to-golang/hello.go
 
 Run the program:
 
@@ -97,75 +74,66 @@ Run the program:
 
 * Pros and cons compared to C/C++
 
-
 *Pros*
 
 - Modern simple language
-- Simple tooling
-- No undefined behaviour in [https://golang.org/ref/spec][the specification]
+- Advanced toolchain, simple to use
+- No [[https://en.wikipedia.org/wiki/Undefined_behavior][undefined behaviour]] in [[https://golang.org/ref/spec][the specification]]
 
 *Cons*
 
 - Not designed for deep embedded systems (needs an OS)
-- Runtime runs only on latest supported OS
+- Runtime runs only on major and latest supported Operating Systems
 - Language not standarized (like C11 has ISO/IEC 9899:2011)
 
 * Pros and cons of tooling
 
-
-* C/C++ is just a language specification, needs many tools and scripts
+C/C++ is just a language specification, needs many tools and scripts
 
 - Compiler toolchain, e.g GCC or clang (LLVM)
 - Documentation generator (Doxygen)
 - Code coverage tool, e.g gcov or lcov
-- Build and dependency system <- This is where the real pain is
+- Build and dependency system
 
-- Go has just a single tool
-- Yeah just `go <whatever>`
+Go has just a single tool
+    `go`
 
-* The Go approach to Dependencies
+* Uncovered topics
 
-Construction speed depends on managing
-dependencies. Explicit dependencies in source allow:
-- fast compilation
-- fast linking
+- Dependency management
+- Concurrency
 
-The Go compiler pulls transitive dependency type
-info from the object file - but only what it needs.
+* Deep dive
 
-If A.go depends on B.go depends on C.go:
-- compile C.go, B.go, then A.go.
-- to compile A.go, compiler reads B.o not C.o.
+* standard library
 
-At scale, this can be a huge speedup.
+Go has an excellent [[https://golang.org/pkg/][standard library]]
 
-* The Go approach to Concurrency
+- [[https://godoc.org/encoding/hex][encoding/hex]]
+- [[https://godoc.org/encoding/json][encoding/json]]
 
-- Go provides a way to write systems and servers
-as concurrent, garbage-collected processes
-(goroutines) with support from the language and
-run-time
-- Language takes care of goroutine management,
-memory management
-- Growing stacks, multiplexing of goroutines onto
-threads is done automatically
-- Concurrency is hard without garbage collection
-- Garbage collection is hard without the right
-language
+* general
 
-* Golang for embedded systems/microcontrollers?
+.code -numbers introduction-to-golang/hello.go
 
-As Go is not original designed for microcontrollers. There are some efforts to run it on AVR and ARM.
+* values and variables
 
-- https://tinygo.org
-- https://gobot.io/
-- https://embd.kidoman.io
-- https://github.com/ziutek/emgo?
+.code -numbers introduction-to-golang/hello.go
 
-* Quicklinks
+* switch
 
-- [[https://try.golang.org][try.golang.org]]
-- [[https://blog.golang.org][blog.golang.org]]
-- [[https://github.com/avelino/awesome-go][github.com/avelino/awesome-go]]
-- [[https://www.golang-book.com/books/intro][An Introduction to Programming in Go]]
-- [[https://youtube.com/c/justforfunc][JustForFunc: Programming in Go]]
+.code -numbers introduction-to-golang/hello.go
+
+* interface
+
+.code -numbers introduction-to-golang/hello.go
+
+* 
+
+* Workshop & Q&A
+
+* Getting your hands dirty
+
+[[https://gobyexample.com][Go by example]]
+
+* Thank you!
