@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:3999/introduction-to-golang.slide#14 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Introduction to Golang - http://127.0.0.1:3999/</title>
+    
+    <script>
+      var notesEnabled =  false ;
+    </script>
+    <script src="./introduction-to-golang_files/slides.js"></script>
+
+    
+
+    <script>
+      
+      if (window["location"] && window["location"]["hostname"] == "talks.golang.org") {
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-11222381-6"]);
+        _gaq.push(["b._setAccount", "UA-49880327-6"]);
+        window.trackPageview = function() {
+          _gaq.push(["_trackPageview", location.pathname+location.hash]);
+          _gaq.push(["b._trackPageview", location.pathname+location.hash]);
+        };
+        window.trackPageview();
+        window.trackEvent = function(category, action, opt_label, opt_value, opt_noninteraction) {
+          _gaq.push(["_trackEvent", category, action, opt_label, opt_value, opt_noninteraction]);
+          _gaq.push(["b._trackEvent", category, action, opt_label, opt_value, opt_noninteraction]);
+        };
+      }
+    </script>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1"><meta name="apple-mobile-web-app-capable" content="yes"></head>
+
+  <body style="display: none" class="loaded">
+
+    <section class="slides layout-widescreen">
+
+      <article>
+        <h1>Introduction to Golang</h1>
+        <h3>As an alternative to C &amp; C++</h3>
+        <h3>8 October 2019</h3>
+        
+          <div class="presenter">
+            
+  
+  <p>
+    <a href="https://xor-gate.org/" target="_blank">Jerry Jacobs</a>
+  </p>
+  
+
+  
+  <p>
+    Software Engineer, <a href="https://heliox.nl/" target="_blank">Heliox</a>
+  </p>
+  
+
+          </div>
+        
+      </article>
+
+  
+  
+      <article>
+      
+        <h3>Welcome!</h3>
+        
+<div class="image">
+  <img src="./introduction-to-golang_files/golang-logo.png">
+</div>
+
+<div class="image">
+  <img src="./introduction-to-golang_files/golang-mascot.jpg">
+</div>
+
+      
+      <span class="pagenumber">2</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Introducing myself</h3>
+        
+  <ul>
+  
+    <li>Installed <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_5.10_(Breezy_Badger)" target="_blank">Ubuntu 5.10 long time ago</a></li>
+  
+    <li>Open-source enthousiast for +14 years</li>
+  
+    <li>Highly-experienced with UNIX-like environments</li>
+  
+    <li>Programming C and other languages for +10 years</li>
+  
+    <li>Big love for Embedded Systems</li>
+  
+    <li>Deployed Go in production systems for 2.5 years (Custom IoT Cloud Platform)</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">3</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Agenda</h3>
+        
+  <ul>
+  
+    <li>History</li>
+  
+    <li>Introduction of the language</li>
+  
+    <li>Pros and cons compared to C/C++</li>
+  
+    <li>Deep dive</li>
+  
+    <li>Workshop with Q&amp;A</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">4</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>History</h3>
+        
+<div class="image">
+  <img src="./introduction-to-golang_files/golang-history-timeline.svg">
+</div>
+
+      
+      <span class="pagenumber">5</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Why a new language?</h3>
+        
+  <ul>
+  
+    <li>Long build times</li>
+  
+    <li>Tools are slow</li>
+  
+    <li>Dependencies are uncontrolled</li>
+  
+    <li>Machines have stopped getting faster</li>
+  
+    <li>Language bloat</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">6</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Language features</h3>
+        
+  <ul>
+  
+    <li>Open Source</li>
+  
+    <li>High-speed compilation</li>
+  
+    <li>The efficiency of a statically-typed compiled language with the ease of programming of a dynamic language</li>
+  
+    <li><a href="https://www.youtube.com/watch?v=rFejpH_tAHM" target="_blank">Simple language</a>, easy to read and easy to write: <a href="https://talks.golang.org/2015/simplicity-is-complicated.slide" target="_blank">Simplicity!</a>.</li>
+  
+    <li>No libc (or libc++)</li>
+  
+    <li><a href="https://en.wikipedia.org/wiki/Type_system#Static_type_checking" target="_blank">Staticly typed</a> and staticly compiled (no "slow" <a href="https://en.wikipedia.org/wiki/Virtual_machine" target="_blank">VM</a>, like Java or Python)</li>
+  
+    <li>Safety: type-safe and memory-safe</li>
+  
+    <li>Good support for <a href="https://www.youtube.com/watch?v=cN_DpYBzKso" target="_blank">concurrency</a> and communication</li>
+  
+    <li>Efficient, latency-free <a href="https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)" target="_blank">garbage collection</a></li>
+  
+    <li>Cross-compile is easy: <a href="https://github.com/golang/go/wiki/GoArm" target="_blank">GOARCH=arm GOOS=linux</a></li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">7</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Modern software practices</h3>
+        
+  
+  <p>
+    The language and toolchain contains support for modern programming practices
+  </p>
+  
+
+  <ul>
+  
+    <li>Documentation (<a href="https://golang.org/pkg/cmd/go/internal/doc/" target="_blank">go doc</a>)</li>
+  
+    <li>Unit testing (<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank">go test</a>)</li>
+  
+    <li>Performance benchmarking (<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank">go test -bench</a>)</li>
+  
+    <li><a href="https://en.wikipedia.org/wiki/Race_condition" target="_blank">Race condition</a> testing (<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank">go test -race</a>)</li>
+  
+    <li>Code generation (<a href="https://golang.org/pkg/cmd/go/internal/generate/" target="_blank">go generate</a>)</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">8</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Hello World!</h3>
+        
+  <div class="code">
+
+
+<pre class="numbers"><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "fmt"</span>
+<span num="5">)</span>
+<span num="6"></span>
+<span num="7">func main() {</span>
+<span num="8">    fmt.Println("Hello World!")</span>
+<span num="9">}</span>
+</pre>
+
+
+</div>
+
+  
+  <p>
+    Run the program:
+  </p>
+  
+
+  
+  <div class="code"><pre>$ go run hello.go</pre></div>
+  
+
+      
+      <span class="pagenumber">9</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Pros and cons compared to C/C++</h3>
+        
+  
+  <p>
+    <b>Pros</b>
+  </p>
+  
+
+  <ul>
+  
+    <li>Modern simple language</li>
+  
+    <li>Advanced toolchain, simple to use</li>
+  
+    <li>No <a href="https://en.wikipedia.org/wiki/Undefined_behavior" target="_blank">undefined behaviour</a> in <a href="https://golang.org/ref/spec" target="_blank">the specification</a></li>
+  
+  </ul>
+
+  
+  <p>
+    <b>Cons</b>
+  </p>
+  
+
+  <ul>
+  
+    <li>Not designed for deep embedded systems (needs an OS)</li>
+  
+    <li>Runtime runs only on major and latest supported Operating Systems</li>
+  
+    <li>Language not standarized (like C11 has ISO/IEC 9899:2011)</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">10</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Pros and cons of tooling</h3>
+        
+  
+  <p>
+    C/C++ is just a language specification, needs many tools and scripts
+  </p>
+  
+
+  <ul>
+  
+    <li>Compiler toolchain, e.g GCC or clang (LLVM)</li>
+  
+    <li>Documentation generator (Doxygen)</li>
+  
+    <li>Code coverage tool, e.g gcov or lcov</li>
+  
+    <li>Build and dependency system</li>
+  
+  </ul>
+
+  
+  <p>
+    Go has just a single tool
+<br>
+
+        <code>go</code>
+  </p>
+  
+
+      
+      <span class="pagenumber">11</span>
+      </article>
+  
+  
+  
+      <article class="far-past">
+      
+        <h3>Uncovered topics</h3>
+        
+  <ul>
+  
+    <li>Dependency management</li>
+  
+    <li>Concurrency</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">12</span>
+      </article>
+  
+  
+  
+      <article class="past">
+      
+        <h2>Deep dive</h2>
+      
+      <span class="pagenumber">13</span>
+      </article>
+  
+  
+  
+      <article class="current">
+      
+        <h3>standard library</h3>
+        
+  
+  <p>
+    Go has an excellent <a href="https://golang.org/pkg/" target="_blank">standard library</a>
+  </p>
+  
+
+  <ul>
+  
+    <li><a href="https://godoc.org/encoding/hex" target="_blank">encoding/hex</a></li>
+  
+    <li><a href="https://godoc.org/encoding/json" target="_blank">encoding/json</a></li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">14</span>
+      </article>
+  
+  
+  
+      <article class="next">
+      
+        <h3>general</h3>
+        
+  <div class="code">
+
+
+<pre class="numbers"><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "fmt"</span>
+<span num="5">)</span>
+<span num="6"></span>
+<span num="7">func main() {</span>
+<span num="8">    fmt.Println("Hello World!")</span>
+<span num="9">}</span>
+</pre>
+
+
+</div>
+
+      
+      <span class="pagenumber">15</span>
+      </article>
+  
+  
+  
+      <article class="far-next">
+      
+        <h3>values and variables</h3>
+        
+  <div class="code">
+
+
+<pre class="numbers"><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "fmt"</span>
+<span num="5">)</span>
+<span num="6"></span>
+<span num="7">func main() {</span>
+<span num="8">    fmt.Println("Hello World!")</span>
+<span num="9">}</span>
+</pre>
+
+
+</div>
+
+      
+      <span class="pagenumber">16</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>switch</h3>
+        
+  <div class="code">
+
+
+<pre class="numbers"><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "fmt"</span>
+<span num="5">)</span>
+<span num="6"></span>
+<span num="7">func main() {</span>
+<span num="8">    fmt.Println("Hello World!")</span>
+<span num="9">}</span>
+</pre>
+
+
+</div>
+
+      
+      <span class="pagenumber">17</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>interface</h3>
+        
+  <div class="code">
+
+
+<pre class="numbers"><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "fmt"</span>
+<span num="5">)</span>
+<span num="6"></span>
+<span num="7">func main() {</span>
+<span num="8">    fmt.Println("Hello World!")</span>
+<span num="9">}</span>
+</pre>
+
+
+</div>
+
+      
+      <span class="pagenumber">18</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2></h2>
+      
+      <span class="pagenumber">19</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>Workshop &amp; Q&amp;A</h2>
+      
+      <span class="pagenumber">20</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Getting your hands dirty</h3>
+        
+  
+  <p>
+    <a href="https://gobyexample.com/" target="_blank">Go by example</a>
+  </p>
+  
+
+      
+      <span class="pagenumber">21</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>Thank you!</h2>
+      
+      <span class="pagenumber">22</span>
+      </article>
+  
+  
+
+      <article>
+        <h3>Thank you</h3>
+        
+          <div class="presenter">
+            
+  
+  <p>
+    <a href="https://xor-gate.org/" target="_blank">Jerry Jacobs</a>
+  </p>
+  
+
+  
+  <p>
+    Software Engineer, <a href="https://heliox.nl/" target="_blank">Heliox</a>
+  </p>
+  
+<p class="link"><a href="mailto:jerry.jacobs@heliox.nl" target="_blank">jerry.jacobs@heliox.nl</a></p>
+          </div>
+        
+      </article>
+
+    <div class="slide-area" id="prev-slide-area"></div><div class="slide-area" id="next-slide-area"></div></section>
+
+    <div id="help" style="display: none;">
+      Use the left and right arrow keys or click the left and right
+      edges of the page to navigate between slides.<br>
+      (Press 'H' or navigate to hide this message.)
+    </div>
+
+    
+    <script src="./introduction-to-golang_files/play.js"></script>
+    
+
+    <script>
+      (function() {
+        
+        if (window["location"] && window["location"]["hostname"] == "talks.golang.org") {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        }
+      })();
+    </script>
+  
+
+<link rel="stylesheet" type="text/css" href="./introduction-to-golang_files/css"><link rel="stylesheet" type="text/css" href="./introduction-to-golang_files/styles.css"></body></html>
