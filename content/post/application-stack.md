@@ -22,3 +22,10 @@ Open source
 - Keka
 - VLC
 - Virtualbox
+
+# Do not forget
+
+Privatize the dotfiles
+
+- Syncthing settings and certs
+- SSH settings and keys
