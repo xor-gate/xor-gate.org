@@ -6,7 +6,7 @@ draft: true
 
 # macOS
 
-Propetiary
+Propetiary/payware
 - Moom
 - Time out
 - Todoist
@@ -15,13 +15,14 @@ Propetiary
 
 Open source
 - Homebrew
-- Syncthing
+- [Syncthing](https://syncthing.net)
 - Itsycal
 - iTerm 2
 - MacDown
 - Keka
 - VLC
 - Virtualbox
+- [MacPass](https://macpassapp.org)
 
 # Do not forget
 
