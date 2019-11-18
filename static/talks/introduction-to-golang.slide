@@ -1,6 +1,6 @@
 Introduction to Golang
 As an alternative to C & C++
-8 Oct 2019
+3 Dec 2019
 Tags: golang, c, c++
 
 [[https://xor-gate.org][Jerry Jacobs]]
@@ -64,14 +64,6 @@ The language and toolchain contains support for modern programming practices
 - [[https://en.wikipedia.org/wiki/Race_condition][Race condition]] testing ([[https://golang.org/pkg/cmd/go/internal/test/][go test -race]])
 - Code generation ([[https://golang.org/pkg/cmd/go/internal/generate/][go generate]])
 
-* Hello World!
-
-.code -numbers introduction-to-golang/hello.go
-
-Run the program:
-
-  $ go run hello.go
-
 * Pros and cons compared to C/C++
 
 *Pros*
@@ -98,42 +90,66 @@ C/C++ is just a language specification, needs many tools and scripts
 Go has just a single tool
     `go`
 
-* Uncovered topics
-
-- Dependency management
-- Concurrency
-
 * Deep dive
 
 * standard library
 
 Go has an excellent [[https://golang.org/pkg/][standard library]]
 
-- [[https://godoc.org/encoding/hex][encoding/hex]]
-- [[https://godoc.org/encoding/json][encoding/json]]
+- Encoding; hex, json, base64
+- Compression; tar, zip, bzip2
+- Networking; tcp, udp, http, rpc
+- Crypto; aes, sha256
+- And many many more
 
-* general
+* Hello World!
 
-.code -numbers introduction-to-golang/hello.go
+A simple hello world print.
 
-* values and variables
+.play -numbers introduction-to-golang/hello.go
 
-.code -numbers introduction-to-golang/hello.go
+Compile and run:
 
-* switch
+  $ go run hello.go
 
-.code -numbers introduction-to-golang/hello.go
+* Values and variables
 
-* interface
+.play -numbers introduction-to-golang/values-and-variables.go
 
-.code -numbers introduction-to-golang/hello.go
+* Flow control: for
 
-* 
+.play -numbers introduction-to-golang/for.go
+
+* Flow control: if/else
+
+.play -numbers introduction-to-golang/if-else.go
+
+* Flow control: switch
+
+.play -numbers introduction-to-golang/switch.go
+
+* Data structures: slice
+
+.play -numbers introduction-to-golang/slice.go
+
+* Data structures: struct
+
+.play -numbers introduction-to-golang/struct.go
+
+* Data structures: map
+
+.play -numbers introduction-to-golang/map.go
+
+* Methods & interfaces
+
+.play -numbers introduction-to-golang/methods-and-interfaces.go
 
 * Workshop & Q&A
 
 * Getting your hands dirty
 
+[[https://tour.golang.org/list][A Tour of Go]]
 [[https://gobyexample.com][Go by example]]
+[[https://yourbasic.org/golang/][Go go-to guide]]
 
 * Thank you!
