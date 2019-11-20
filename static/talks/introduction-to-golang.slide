@@ -58,11 +58,13 @@ jerry.jacobs@heliox.nl
 
 The language and toolchain contains support for modern programming practices
 
-- Documentation ([[https://golang.org/pkg/cmd/go/internal/doc/][go doc]])
-- Unit testing ([[https://golang.org/pkg/cmd/go/internal/test/][go test]])
-- Performance benchmarking ([[https://golang.org/pkg/cmd/go/internal/test/][go test -bench]])
-- [[https://en.wikipedia.org/wiki/Race_condition][Race condition]] testing ([[https://golang.org/pkg/cmd/go/internal/test/][go test -race]])
-- Code generation ([[https://golang.org/pkg/cmd/go/internal/generate/][go generate]])
+- Code formatting ([[https://golang.org/cmd/gofmt/][gofmt]])
+- Documentation ([[https://golang.org/cmd/doc/][go doc]])
+- Unit testing ([[https://golang.org/cmd/go/#hdr-Testing_flags][go test]])
+- [[https://en.wikipedia.org/wiki/Race_condition][Race condition]] testing ([[https://golang.org/cmd/go/#hdr-Testing_flags][go test -race]])
+- Performance benchmarking ([[https://golang.org/cmd/go/#hdr-Testing_flags][go test -bench]])
+- Static analysis ([[https://golang.org/cmd/vet/][go vet]])
+- Code generation ([[https://golang.org/cmd/go/#hdr-Generate_Go_files_by_processing_source][go generate]])
 
 * Pros and cons compared to C/C++
 
@@ -102,11 +104,17 @@ Go has an excellent [[https://golang.org/pkg/][standard library]]
 - Crypto; aes, sha256
 - And many many more
 
+* language organisation
+
+- [[https://golang.org/ref/spec#Source_code_representation][Source code is Unicode text]] encoded in UTF-8
+- Code is organized in [[https://golang.org/ref/spec#Packages][packages]]
+- Go has no public/private keyword, just use highercase for [[https://golang.org/ref/spec#Exported_identifiers][exporting identifiers]]
+
 * Hello World!
 
 A simple hello world print.
 
-.play -numbers introduction-to-golang/hello.go
+.play introduction-to-golang/hello.go
 
 Compile and run:
 
@@ -114,35 +122,39 @@ Compile and run:
 
 * Values and variables
 
-.play -numbers introduction-to-golang/values-and-variables.go
+.play introduction-to-golang/values-and-variables.go
 
 * Flow control: for
 
-.play -numbers introduction-to-golang/for.go
+.play introduction-to-golang/for.go
 
 * Flow control: if/else
 
-.play -numbers introduction-to-golang/if-else.go
+.play introduction-to-golang/if-else.go
 
 * Flow control: switch
 
-.play -numbers introduction-to-golang/switch.go
+.play introduction-to-golang/switch.go
 
-* Data structures: slice
+* Data structures: array & slice
 
-.play -numbers introduction-to-golang/slice.go
+.play introduction-to-golang/array-and-slice.go
 
 * Data structures: struct
 
-.play -numbers introduction-to-golang/struct.go
+.play introduction-to-golang/struct.go
 
 * Data structures: map
 
-.play -numbers introduction-to-golang/map.go
+.play introduction-to-golang/map.go
+
+* Pointers
+
+.play introduction-to-golang/pointers.go
 
 * Methods & interfaces
 
-.play -numbers introduction-to-golang/methods-and-interfaces.go
+.play introduction-to-golang/methods-and-interfaces.go
 
 * Workshop & Q&A
 
@@ -151,5 +163,6 @@ Compile and run:
 [[https://tour.golang.org/list][A Tour of Go]]
 [[https://gobyexample.com][Go by example]]
 [[https://yourbasic.org/golang/][Go go-to guide]]
+[[https://learn.go.dev][Learn - Go.dev]]
 
 * Thank you!
