@@ -63,6 +63,10 @@ Go is not designed for CPU & memory constrained systems.
 
 * Quicklinks
 
+- [[https://tour.golang.org/list][A Tour of Go]]
+- [[https://gobyexample.com][Go by example]]
+- [[https://yourbasic.org/golang/][Go go-to guide]]
+- [[https://learn.go.dev][Learn - Go.dev]]
 - [[https://try.golang.org][try.golang.org]]
 - [[https://blog.golang.org][blog.golang.org]]
 - [[https://github.com/avelino/awesome-go][github.com/avelino/awesome-go]]

@@ -3,7 +3,7 @@
 # And see https://gohugo.io/getting-started/configuration/ .
 
 baseURL = "https://xor-gate.org/"
-title = "Xor-Gate Engineering"
+title = "Xor-Gate Personal Blog"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"

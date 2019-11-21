@@ -26,14 +26,14 @@ jerry.jacobs@heliox.nl
 - History
 - Introduction of the language
 - Pros and cons compared to C/C++
-- Deep dive
+- Language howto
 - Workshop with Q&A
 
 * History
 
 .image introduction-to-golang/golang-history-timeline.svg
 
-* Why a new language?
+* Intro: Why a new language?
 
 - Long build times
 - Tools are slow
@@ -80,19 +80,30 @@ The language and toolchain contains support for modern programming practices
 - Runtime runs only on major and latest supported Operating Systems
 - Language not standarized (like C11 has ISO/IEC 9899:2011)
 
-* Pros and cons of tooling
+* Pros and cons compared to C/C++
 
-C/C++ is just a language specification, needs many tools and scripts
+C/C++ is just a language specification, needs many tools
 
-- Compiler toolchain, e.g GCC or clang (LLVM)
-- Documentation generator (Doxygen)
+- Compiler toolchain, e.g GCC or Clang
+- Documentation generator, e.g Doxygen
 - Code coverage tool, e.g gcov or lcov
-- Build and dependency system
+- Build and dependency system, e.g cmake
 
 Go has just a single tool
-    `go`
 
-* Deep dive
+    go
+
+* Who uses it?
+
+- Dutch government
+- Bol.com
+- Uber
+- Netflix
+- Dropbox
+- Amazon
+- [[https://github.com/golang/go/wiki/GoUsers][And the list goes on]]...
+
+* Language howto 
 
 * standard library
 
@@ -111,8 +122,6 @@ Go has an excellent [[https://golang.org/pkg/][standard library]]
 - Go has no public/private keyword, just use highercase for [[https://golang.org/ref/spec#Exported_identifiers][exporting identifiers]]
 
 * Hello World!
-
-A simple hello world print.
 
 .play introduction-to-golang/hello.go
 
@@ -157,12 +166,3 @@ Compile and run:
 .play introduction-to-golang/methods-and-interfaces.go
 
 * Workshop & Q&A
-
-* Getting your hands dirty
-
-[[https://tour.golang.org/list][A Tour of Go]]
-[[https://gobyexample.com][Go by example]]
-[[https://yourbasic.org/golang/][Go go-to guide]]
-[[https://learn.go.dev][Learn - Go.dev]]
-
-* Thank you!
