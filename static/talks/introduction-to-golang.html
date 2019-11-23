@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)http://127.0.0.1:3999/introduction-to-golang.slide#14 -->
+<!-- saved from url=(0052)http://127.0.0.1:3999/introduction-to-golang.slide#1 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Introduction to Golang - http://127.0.0.1:3999/</title>
     
@@ -31,12 +31,12 @@
 
   <body style="display: none" class="loaded">
 
-    <section class="slides layout-widescreen">
+    <section class="slides layout-widescreen" style="transform: scale(0.865333);">
 
-      <article>
+      <article class="current">
         <h1>Introduction to Golang</h1>
         <h3>As an alternative to C &amp; C++</h3>
-        <h3>8 October 2019</h3>
+        <h3>3 December 2019</h3>
         
           <div class="presenter">
             
@@ -58,7 +58,7 @@
 
   
   
-      <article>
+      <article class="next">
       
         <h3>Welcome!</h3>
         
@@ -76,7 +76,7 @@
   
   
   
-      <article>
+      <article class="far-next">
       
         <h3>Introducing myself</h3>
         
@@ -114,7 +114,7 @@
   
     <li>Pros and cons compared to C/C++</li>
   
-    <li>Deep dive</li>
+    <li>Language howto</li>
   
     <li>Workshop with Q&amp;A</li>
   
@@ -142,7 +142,7 @@
   
       <article>
       
-        <h3>Why a new language?</h3>
+        <h3>Intro: Why a new language?</h3>
         
   <ul>
   
@@ -210,57 +210,24 @@
 
   <ul>
   
-    <li>Documentation (<a href="https://golang.org/pkg/cmd/go/internal/doc/" target="_blank">go doc</a>)</li>
+    <li>Code formatting (<a href="https://golang.org/cmd/gofmt/" target="_blank">gofmt</a>)</li>
   
-    <li>Unit testing (<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank">go test</a>)</li>
+    <li>Documentation (<a href="https://golang.org/cmd/doc/" target="_blank">go doc</a>)</li>
   
-    <li>Performance benchmarking (<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank">go test -bench</a>)</li>
+    <li>Unit testing (<a href="https://golang.org/cmd/go/#hdr-Testing_flags" target="_blank">go test</a>)</li>
   
-    <li><a href="https://en.wikipedia.org/wiki/Race_condition" target="_blank">Race condition</a> testing (<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank">go test -race</a>)</li>
+    <li><a href="https://en.wikipedia.org/wiki/Race_condition" target="_blank">Race condition</a> testing (<a href="https://golang.org/cmd/go/#hdr-Testing_flags" target="_blank">go test -race</a>)</li>
   
-    <li>Code generation (<a href="https://golang.org/pkg/cmd/go/internal/generate/" target="_blank">go generate</a>)</li>
+    <li>Performance benchmarking (<a href="https://golang.org/cmd/go/#hdr-Testing_flags" target="_blank">go test -bench</a>)</li>
+  
+    <li>Static analysis (<a href="https://golang.org/cmd/vet/" target="_blank">go vet</a>)</li>
+  
+    <li>Code generation (<a href="https://golang.org/cmd/go/#hdr-Generate_Go_files_by_processing_source" target="_blank">go generate</a>)</li>
   
   </ul>
 
       
       <span class="pagenumber">8</span>
-      </article>
-  
-  
-  
-      <article>
-      
-        <h3>Hello World!</h3>
-        
-  <div class="code">
-
-
-<pre class="numbers"><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "fmt"</span>
-<span num="5">)</span>
-<span num="6"></span>
-<span num="7">func main() {</span>
-<span num="8">    fmt.Println("Hello World!")</span>
-<span num="9">}</span>
-</pre>
-
-
-</div>
-
-  
-  <p>
-    Run the program:
-  </p>
-  
-
-  
-  <div class="code"><pre>$ go run hello.go</pre></div>
-  
-
-      
-      <span class="pagenumber">9</span>
       </article>
   
   
@@ -302,6 +269,44 @@
   </ul>
 
       
+      <span class="pagenumber">9</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Pros and cons compared to C/C++</h3>
+        
+  
+  <p>
+    C/C++ is just a language specification, needs many tools
+  </p>
+  
+
+  <ul>
+  
+    <li>Compiler toolchain, e.g GCC or Clang</li>
+  
+    <li>Documentation generator, e.g Doxygen</li>
+  
+    <li>Code coverage tool, e.g gcov or lcov</li>
+  
+    <li>Build and dependency system, e.g cmake</li>
+  
+  </ul>
+
+  
+  <p>
+    Go has just a single tool
+  </p>
+  
+
+  
+  <div class="code"><pre>go</pre></div>
+  
+
+      
       <span class="pagenumber">10</span>
       </article>
   
@@ -309,34 +314,25 @@
   
       <article>
       
-        <h3>Pros and cons of tooling</h3>
+        <h3>Who uses it?</h3>
         
-  
-  <p>
-    C/C++ is just a language specification, needs many tools and scripts
-  </p>
-  
-
   <ul>
   
-    <li>Compiler toolchain, e.g GCC or clang (LLVM)</li>
+    <li>Dutch government</li>
   
-    <li>Documentation generator (Doxygen)</li>
+    <li>Bol.com</li>
   
-    <li>Code coverage tool, e.g gcov or lcov</li>
+    <li>Uber</li>
   
-    <li>Build and dependency system</li>
+    <li>Netflix</li>
+  
+    <li>Dropbox</li>
+  
+    <li>Amazon</li>
+  
+    <li><a href="https://github.com/golang/go/wiki/GoUsers" target="_blank">And the list goes on</a>...</li>
   
   </ul>
-
-  
-  <p>
-    Go has just a single tool
-<br>
-
-        <code>go</code>
-  </p>
-  
 
       
       <span class="pagenumber">11</span>
@@ -344,34 +340,16 @@
   
   
   
-      <article class="far-past">
+      <article>
       
-        <h3>Uncovered topics</h3>
-        
-  <ul>
-  
-    <li>Dependency management</li>
-  
-    <li>Concurrency</li>
-  
-  </ul>
-
+        <h2>Language howto </h2>
       
       <span class="pagenumber">12</span>
       </article>
   
   
   
-      <article class="past">
-      
-        <h2>Deep dive</h2>
-      
-      <span class="pagenumber">13</span>
-      </article>
-  
-  
-  
-      <article class="current">
+      <article>
       
         <h3>standard library</h3>
         
@@ -383,9 +361,35 @@
 
   <ul>
   
-    <li><a href="https://godoc.org/encoding/hex" target="_blank">encoding/hex</a></li>
+    <li>Encoding; hex, json, base64</li>
   
-    <li><a href="https://godoc.org/encoding/json" target="_blank">encoding/json</a></li>
+    <li>Compression; tar, zip, bzip2</li>
+  
+    <li>Networking; tcp, udp, http, rpc</li>
+  
+    <li>Crypto; aes, sha256</li>
+  
+    <li>And many many more</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">13</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>language organisation</h3>
+        
+  <ul>
+  
+    <li><a href="https://golang.org/ref/spec#Source_code_representation" target="_blank">Source code is Unicode text</a> encoded in UTF-8</li>
+  
+    <li>Code is organized in <a href="https://golang.org/ref/spec#Packages" target="_blank">packages</a></li>
+  
+    <li>Go has no public/private keyword, just use highercase for <a href="https://golang.org/ref/spec#Exported_identifiers" target="_blank">exporting identifiers</a></li>
   
   </ul>
 
@@ -395,26 +399,41 @@
   
   
   
-      <article class="next">
+      <article>
       
-        <h3>general</h3>
+        <h3>Hello World!</h3>
         
-  <div class="code">
+  <div class="code playground">
 
 
-<pre class="numbers"><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "fmt"</span>
-<span num="5">)</span>
-<span num="6"></span>
-<span num="7">func main() {</span>
-<span num="8">    fmt.Println("Hello World!")</span>
-<span num="9">}</span>
+<pre><span num="1">// All go files must start with a package name</span>
+<span num="2">//  the "main" package is where the main function resides</span>
+<span num="3">package main</span>
+<span num="4"></span>
+<span num="5">// The import statement is for loading other packages</span>
+<span num="6">//  the "fmt" package is for formatting</span>
+<span num="7">import (</span>
+<span num="8">    "fmt"</span>
+<span num="9">)</span>
+<span num="10"></span>
+<span num="11">// The main function is the entrypoint of the executable</span>
+<span num="12">func main() {</span>
+<span num="13">    fmt.Println("Hello World!")</span>
+<span num="14">}</span>
 </pre>
 
 
-</div>
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
+
+  
+  <p>
+    Compile and run:
+  </p>
+  
+
+  
+  <div class="code"><pre>$ go run hello.go</pre></div>
+  
 
       
       <span class="pagenumber">15</span>
@@ -422,26 +441,38 @@
   
   
   
-      <article class="far-next">
+      <article>
       
-        <h3>values and variables</h3>
+        <h3>Values and variables</h3>
         
-  <div class="code">
+  <div class="code playground">
 
 
-<pre class="numbers"><span num="1">package main</span>
+<pre><span num="1">package main</span>
 <span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "fmt"</span>
-<span num="5">)</span>
-<span num="6"></span>
-<span num="7">func main() {</span>
-<span num="8">    fmt.Println("Hello World!")</span>
-<span num="9">}</span>
+<span num="3">import "fmt"</span>
+<span num="4"></span>
+<span num="5">func main() {</span>
+<span num="6">    // Concatenate and calculate</span>
+<span num="7">    fmt.Println("foo" + "bar")</span>
+<span num="8">    fmt.Println("12.3 * 2 =", 12.3*2)</span>
+<span num="9"></span>
+<span num="10">    // Variables always have a initialized value</span>
+<span num="11">    var a uint</span>
+<span num="12">    fmt.Println("a =", a)</span>
+<span num="13"></span>
+<span num="14">    // Multiple variables with multiple types</span>
+<span num="15">    var b, c = 10.5, "chicken"</span>
+<span num="16">    fmt.Printf("b(%v): %T, c(%v): %T\n", b, b, c, c)</span>
+<span num="17"></span>
+<span num="18">    // Single variable declare and assign</span>
+<span num="19">    d := "var d"</span>
+<span num="20">    fmt.Println(d)</span>
+<span num="21">}</span>
 </pre>
 
 
-</div>
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">16</span>
@@ -451,24 +482,32 @@
   
       <article>
       
-        <h3>switch</h3>
+        <h3>Flow control: for</h3>
         
-  <div class="code">
+  <div class="code playground">
 
 
-<pre class="numbers"><span num="1">package main</span>
+<pre><span num="1">package main</span>
 <span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "fmt"</span>
-<span num="5">)</span>
-<span num="6"></span>
-<span num="7">func main() {</span>
-<span num="8">    fmt.Println("Hello World!")</span>
-<span num="9">}</span>
+<span num="3">import "fmt"</span>
+<span num="4"></span>
+<span num="5">func main() {</span>
+<span num="6">    // A classical for loop which counts from 1 to 3</span>
+<span num="7">    for n := 1; n &lt; 4; n++ {</span>
+<span num="8">        fmt.Println("n =", n)</span>
+<span num="9">    }</span>
+<span num="10"></span>
+<span num="11">    // Go doesn't have a while statement, for is used</span>
+<span num="12">    sum := 1</span>
+<span num="13">    for sum &lt; 10 {</span>
+<span num="14">        sum++</span>
+<span num="15">    }</span>
+<span num="16">    fmt.Println("sum =", sum)</span>
+<span num="17">}</span>
 </pre>
 
 
-</div>
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">17</span>
@@ -478,24 +517,32 @@
   
       <article>
       
-        <h3>interface</h3>
+        <h3>Flow control: if/else</h3>
         
-  <div class="code">
+  <div class="code playground">
 
 
-<pre class="numbers"><span num="1">package main</span>
+<pre><span num="1">package main</span>
 <span num="2"></span>
 <span num="3">import (</span>
 <span num="4">    "fmt"</span>
-<span num="5">)</span>
-<span num="6"></span>
-<span num="7">func main() {</span>
-<span num="8">    fmt.Println("Hello World!")</span>
-<span num="9">}</span>
+<span num="5">    "time"</span>
+<span num="6">)</span>
+<span num="7"></span>
+<span num="8">func main() {</span>
+<span num="9">    // Variables declared inside an if are also available in the else</span>
+<span num="10">    if name, offset := time.Now().Zone(); offset == 3600 {</span>
+<span num="11">        fmt.Println("We are here at UTC + 1 hour! (name: ", name, ")")</span>
+<span num="12">    } else if offset == 7200 {</span>
+<span num="13">        fmt.Println("We are here at UTC + 2 hour! (name: ", name, ")")</span>
+<span num="14">    } else {</span>
+<span num="15">        fmt.Println("We are at", name)</span>
+<span num="16">    }</span>
+<span num="17">}</span>
 </pre>
 
 
-</div>
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">18</span>
@@ -505,7 +552,35 @@
   
       <article>
       
-        <h2></h2>
+        <h3>Flow control: switch</h3>
+        
+  <div class="code playground">
+
+
+<pre><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "fmt"</span>
+<span num="5">    "time"</span>
+<span num="6">)</span>
+<span num="7"></span>
+<span num="8">func main() {</span>
+<span num="9">    switch time.Tuesday {</span>
+<span num="10">    // You can use commas in a case to cover multiple statements</span>
+<span num="11">    case time.Tuesday, time.Friday:</span>
+<span num="12">        // By default, go switch-cases don't fallthrough</span>
+<span num="13">        fallthrough</span>
+<span num="14">    case time.Saturday:</span>
+<span num="15">        fmt.Println("Today is the big day")</span>
+<span num="16">    default:</span>
+<span num="17">        fmt.Println("Its a regular day")</span>
+<span num="18">    }</span>
+<span num="19">}</span>
+</pre>
+
+
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
+
       
       <span class="pagenumber">19</span>
       </article>
@@ -514,7 +589,30 @@
   
       <article>
       
-        <h2>Workshop &amp; Q&amp;A</h2>
+        <h3>Data structures: array &amp; slice</h3>
+        
+  <div class="code playground">
+
+
+<pre><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import "fmt"</span>
+<span num="4"></span>
+<span num="5">func main() {</span>
+<span num="6">    // An array is a fixed-size object</span>
+<span num="7">    wordarr := [4]byte{0xde, 0xad, 0xbe, 0xef}</span>
+<span num="8"></span>
+<span num="9">    // Convert the array to a slice and typecast to string</span>
+<span num="10">    wordsli := wordarr[:]</span>
+<span num="11"></span>
+<span num="12">    // Print the length and capacity of the slice (and hex)</span>
+<span num="13">    fmt.Printf("len(%d), cap(%d), %x\n", len(wordsli), cap(wordsli), string(wordsli))</span>
+<span num="14">}</span>
+</pre>
+
+
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
+
       
       <span class="pagenumber">20</span>
       </article>
@@ -523,13 +621,32 @@
   
       <article>
       
-        <h3>Getting your hands dirty</h3>
+        <h3>Data structures: struct</h3>
         
-  
-  <p>
-    <a href="https://gobyexample.com/" target="_blank">Go by example</a>
-  </p>
-  
+  <div class="code playground">
+
+
+<pre><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import "fmt"</span>
+<span num="4"></span>
+<span num="5">// Create a struct to store person information</span>
+<span num="6">type Person struct {</span>
+<span num="7">    Name string</span>
+<span num="8">    Age  int</span>
+<span num="9">}</span>
+<span num="10"></span>
+<span num="11">func main() {</span>
+<span num="12">    // Create and initialize a person</span>
+<span num="13">    p := Person{Name: "Jerry", Age: 30}</span>
+<span num="14"></span>
+<span num="15">    // Print struct including property names</span>
+<span num="16">    fmt.Printf("%+v\n", p)</span>
+<span num="17">}</span>
+</pre>
+
+
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">21</span>
@@ -539,9 +656,126 @@
   
       <article>
       
-        <h2>Thank you!</h2>
+        <h3>Data structures: map</h3>
+        
+  <div class="code playground">
+
+
+<pre><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import "fmt"</span>
+<span num="4"></span>
+<span num="5">type Location struct {</span>
+<span num="6">    Latitude, Longitude float64</span>
+<span num="7">}</span>
+<span num="8"></span>
+<span num="9">func main() {</span>
+<span num="10">    // Allocate an empty map with make</span>
+<span num="11">    m := make(map[string]Location)</span>
+<span num="12"></span>
+<span num="13">    // Store the location of Heliox</span>
+<span num="14">    m["Heliox"] = Location{</span>
+<span num="15">        51.485945, 5.392263,</span>
+<span num="16">    }</span>
+<span num="17"></span>
+<span num="18">    // Test and get the value of key "Heliox"</span>
+<span num="19">    loc, ok := m["Heliox"]</span>
+<span num="20">    fmt.Println(loc, ok)</span>
+<span num="21">}</span>
+</pre>
+
+
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
+
       
       <span class="pagenumber">22</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Pointers</h3>
+        
+  <div class="code playground">
+
+
+<pre><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import "fmt"</span>
+<span num="4"></span>
+<span num="5">func main() {</span>
+<span num="6">    i := 42</span>
+<span num="7"></span>
+<span num="8">    p := &amp;i         // point to i</span>
+<span num="9">    fmt.Println(*p) // read i through the pointer</span>
+<span num="10">    *p = 21         // set i through the pointer</span>
+<span num="11">    fmt.Println(i)  // see the new value of i</span>
+<span num="12">}</span>
+</pre>
+
+
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
+
+      
+      <span class="pagenumber">23</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Methods &amp; interfaces</h3>
+        
+  <div class="code playground">
+
+
+<pre><span num="1">package main</span>
+<span num="2"></span>
+<span num="3">import (</span>
+<span num="4">    "io"</span>
+<span num="5">    "os"</span>
+<span num="6">    "strings"</span>
+<span num="7">)</span>
+<span num="8"></span>
+<span num="9">// Read data from r and write to os.Stdout</span>
+<span num="10">//  the io.Reader is an interface with only a Read method</span>
+<span num="11">func WriteToStdout(r io.Reader) {</span>
+<span num="12">    // Copy to an io.Writer (dest) from an io.Reader (source)</span>
+<span num="13">    //  this can be anything! File, network socket etc.</span>
+<span num="14">    io.Copy(os.Stdout, r)</span>
+<span num="15">}</span>
+<span num="16"></span>
+<span num="17">func main() {</span>
+<span num="18">    // Create an io.Reader from a string and print it to os.Stdout</span>
+<span num="19">    sr := strings.NewReader("Hello string reader!")</span>
+<span num="20">    WriteToStdout(sr)</span>
+<span num="21">}</span>
+</pre>
+
+
+</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
+
+      
+      <span class="pagenumber">24</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Workshop &amp; Q&amp;A</h3>
+        
+  <ul>
+  
+    <li>Create a todo task list manager</li>
+  
+    <li>HTTP API with JSON?</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">25</span>
       </article>
   
   

@@ -166,3 +166,6 @@ Compile and run:
 .play introduction-to-golang/methods-and-interfaces.go
 
 * Workshop & Q&A
+
+- Create a todo task list manager
+- HTTP API with JSON?
