@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	// Yes the day of the course is Tuesday
 	switch time.Tuesday {
 	// You can use commas in a case to cover multiple statements
 	case time.Tuesday, time.Friday:

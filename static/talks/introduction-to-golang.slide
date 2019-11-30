@@ -115,15 +115,16 @@ Go has an excellent [[https://golang.org/pkg/][standard library]]
 - Crypto; aes, sha256
 - And many many more
 
-* language organisation
+* Language Organization
 
-- [[https://golang.org/ref/spec#Source_code_representation][Source code is Unicode text]] encoded in UTF-8
+- [[https://golang.org/ref/spec#Source_code_representation][Source code and strings are Unicode text]] encoded in UTF-8
 - Code is organized in [[https://golang.org/ref/spec#Packages][packages]]
-- Go has no public/private keyword, just use highercase for [[https://golang.org/ref/spec#Exported_identifiers][exporting identifiers]]
+- [[https://golang.org/ref/spec#Interface_types][[Interface]] is implicit by [[https://golang.org/ref/spec#Method_sets][method set]]
+- Go has no public/private keyword, just use uppercase for [[https://golang.org/ref/spec#Exported_identifiers][exporting identifiers]]
 
 * Hello World!
 
-.play introduction-to-golang/hello.go
+.play -numbers -edit introduction-to-golang/hello.go
 
 Compile and run:
 
@@ -131,41 +132,45 @@ Compile and run:
 
 * Values and variables
 
-.play introduction-to-golang/values-and-variables.go
+.play -numbers -edit introduction-to-golang/values-and-variables.go
 
 * Flow control: for
 
-.play introduction-to-golang/for.go
+.play -numbers -edit introduction-to-golang/for.go
 
 * Flow control: if/else
 
-.play introduction-to-golang/if-else.go
+.play -numbers -edit introduction-to-golang/if-else.go
 
 * Flow control: switch
 
-.play introduction-to-golang/switch.go
+.play -numbers -edit introduction-to-golang/switch.go
 
 * Data structures: array & slice
 
-.play introduction-to-golang/array-and-slice.go
+.play -numbers -edit introduction-to-golang/array-and-slice.go
 
 * Data structures: struct
 
-.play introduction-to-golang/struct.go
+.play -numbers -edit introduction-to-golang/struct.go
 
 * Data structures: map
 
-.play introduction-to-golang/map.go
+.play -numbers -edit introduction-to-golang/map.go
 
 * Pointers
 
-.play introduction-to-golang/pointers.go
+.play -numbers -edit introduction-to-golang/pointers.go
 
 * Methods & interfaces
 
-.play introduction-to-golang/methods-and-interfaces.go
+.play -numbers -edit introduction-to-golang/methods-and-interfaces.go HL1
 
 * Workshop & Q&A
 
-- Create a todo task list manager
-- HTTP API with JSON?
+* Ideas?
+
+- Reading JSON/XML/JSON/YAML files
+- Create a todo list manager
+- Program a TCP/Websocket server
+- HTTP server with JSON API
