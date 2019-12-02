@@ -61,8 +61,8 @@ defaultContentLanguage = "en"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Xor-Gate Engineering"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["embedded", "xor-gate", "it", "open-source", "linux" ]
+  logoTitle = "Xor-Gate"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["embedded", "xor-gate", "it", "open-source", "linux", "golang", "go" ]
   description = "Fun with Embedded and IT, with some other weird hobbies"
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
