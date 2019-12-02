@@ -21,6 +21,10 @@ PygmentsUseClasses = true # Use CSS classes to format highlighted code
 PygmentsCodefencesGuessSyntax = true
 PygmentsOptions = "linenos=table"
 
+[blackfriday]
+   plainIDAnchors = true
+   hrefTargetBlank = true
+
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"           # Default language to use
 [languages.en]

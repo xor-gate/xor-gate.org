@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)http://127.0.0.1:3999/introduction-to-golang.slide#1 -->
+<!-- saved from url=(0052)http://127.0.0.1:4001/introduction-to-golang.slide#1 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Introduction to Golang - http://127.0.0.1:3999/</title>
+    <title>Introduction to Golang - http://127.0.0.1:4001/</title>
     
     <script>
       var notesEnabled =  false ;
@@ -31,11 +31,11 @@
 
   <body style="display: none" class="loaded">
 
-    <section class="slides layout-widescreen" style="transform: scale(0.865333);">
+    <section class="slides layout-widescreen" style="transform: scale(0.953333);">
 
       <article class="current">
         <h1>Introduction to Golang</h1>
-        <h3>As an alternative to C &amp; C++</h3>
+        <h3>Scratching the surface</h3>
         <h3>3 December 2019</h3>
         
           <div class="presenter">
@@ -62,12 +62,14 @@
       
         <h3>Welcome!</h3>
         
-<div class="image">
-  <img src="./introduction-to-golang_files/golang-logo.png">
-</div>
+  <ul>
+  
+    <li>Presentation can be found on <a href="https://xor-gate.org/" target="_blank">xor-gate.org</a></li>
+  
+  </ul>
 
 <div class="image">
-  <img src="./introduction-to-golang_files/golang-mascot.jpg">
+  <img src="./introduction-to-golang_files/golang-logo.png">
 </div>
 
       
@@ -82,17 +84,17 @@
         
   <ul>
   
-    <li>Installed <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_5.10_(Breezy_Badger)" target="_blank">Ubuntu 5.10 long time ago</a></li>
+    <li>Installed <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_5.04_(Hoary_Hedgehog)" target="_blank">Ubuntu 5.04 long time ago</a></li>
   
-    <li>Open-source enthousiast for +14 years</li>
+    <li>Open-source &amp; Linux enthousiast for +14 years</li>
   
     <li>Highly-experienced with UNIX-like environments</li>
   
     <li>Programming C and other languages for +10 years</li>
   
-    <li>Big love for Embedded Systems</li>
+    <li>Self-learning Go since Dec 2015</li>
   
-    <li>Deployed Go in production systems for 2.5 years (Custom IoT Cloud Platform)</li>
+    <li>Deployed Go in production systems +2.5 years</li>
   
   </ul>
 
@@ -102,7 +104,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>Agenda</h3>
         
@@ -126,7 +128,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>History</h3>
         
@@ -140,7 +142,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>Intro: Why a new language?</h3>
         
@@ -303,7 +305,7 @@
   
 
   
-  <div class="code"><pre>go</pre></div>
+  <div><pre>go</pre></div>
   
 
       
@@ -318,17 +320,17 @@
         
   <ul>
   
-    <li>Dutch government</li>
+    <li><a href="https://github.com/google?language=go" target="_blank">Google</a></li>
   
-    <li>Bol.com</li>
+    <li><a href="https://github.com/bolcom?language=go" target="_blank">Bol.com</a></li>
   
-    <li>Uber</li>
+    <li><a href="https://github.com/uber?language=go" target="_blank">Uber</a></li>
   
-    <li>Netflix</li>
+    <li><a href="https://github.com/netflix?language=go" target="_blank">Netflix</a></li>
   
-    <li>Dropbox</li>
+    <li><a href="https://github.com/dropbox?language=go" target="_blank">Dropbox</a></li>
   
-    <li>Amazon</li>
+    <li><a href="https://github.com/digitalocean?language=go" target="_blank">Digital Ocean</a></li>
   
     <li><a href="https://github.com/golang/go/wiki/GoUsers" target="_blank">And the list goes on</a>...</li>
   
@@ -381,15 +383,19 @@
   
       <article>
       
-        <h3>language organisation</h3>
+        <h3>Language Organization</h3>
         
   <ul>
   
-    <li><a href="https://golang.org/ref/spec#Source_code_representation" target="_blank">Source code is Unicode text</a> encoded in UTF-8</li>
+    <li><a href="https://golang.org/ref/spec#Source_code_representation" target="_blank">Source code and strings are Unicode text</a> encoded in UTF-8</li>
   
-    <li>Code is organized in <a href="https://golang.org/ref/spec#Packages" target="_blank">packages</a></li>
+    <li>Code is <a href="https://golang.org/doc/code.html" target="_blank">organized</a> in <a href="https://golang.org/ref/spec#Packages" target="_blank">packages</a></li>
   
-    <li>Go has no public/private keyword, just use highercase for <a href="https://golang.org/ref/spec#Exported_identifiers" target="_blank">exporting identifiers</a></li>
+    <li><a href="https://golang.org/ref/spec#Interface_types" target="_blank">Interface</a> is implicit by <a href="https://golang.org/ref/spec#Method_sets" target="_blank">method set</a></li>
+  
+    <li>Go has no public/private keyword, just use uppercase for <a href="https://golang.org/ref/spec#Exported_identifiers" target="_blank">exporting identifiers</a></li>
+  
+    <li>Built-in support for <a href="https://gobyexample.com/multiple-return-values" target="_blank">multiple return values</a></li>
   
   </ul>
 
@@ -403,27 +409,22 @@
       
         <h3>Hello World!</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">// All go files must start with a package name</span>
-<span num="2">//  the "main" package is where the main function resides</span>
-<span num="3">package main</span>
-<span num="4"></span>
-<span num="5">// The import statement is for loading other packages</span>
-<span num="6">//  the "fmt" package is for formatting</span>
-<span num="7">import (</span>
-<span num="8">    "fmt"</span>
-<span num="9">)</span>
-<span num="10"></span>
-<span num="11">// The main function is the entrypoint of the executable</span>
-<span num="12">func main() {</span>
-<span num="13">    fmt.Println("Hello World!")</span>
-<span num="14">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#75715e">// All go files must start with a package name
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#75715e">//  the "main" package is where the main function resides
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#75715e"></span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#75715e">// The import statement is for loading other packages
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#75715e">//  the "fmt" package is for formatting
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> (
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>	<span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#75715e">// The main function is the entrypoint of the executable
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"Hello World!"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
   
   <p>
@@ -432,7 +433,7 @@
   
 
   
-  <div class="code"><pre>$ go run hello.go</pre></div>
+  <div><pre>$ go run hello.go</pre></div>
   
 
       
@@ -445,34 +446,29 @@
       
         <h3>Values and variables</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import "fmt"</span>
-<span num="4"></span>
-<span num="5">func main() {</span>
-<span num="6">    // Concatenate and calculate</span>
-<span num="7">    fmt.Println("foo" + "bar")</span>
-<span num="8">    fmt.Println("12.3 * 2 =", 12.3*2)</span>
-<span num="9"></span>
-<span num="10">    // Variables always have a initialized value</span>
-<span num="11">    var a uint</span>
-<span num="12">    fmt.Println("a =", a)</span>
-<span num="13"></span>
-<span num="14">    // Multiple variables with multiple types</span>
-<span num="15">    var b, c = 10.5, "chicken"</span>
-<span num="16">    fmt.Printf("b(%v): %T, c(%v): %T\n", b, b, c, c)</span>
-<span num="17"></span>
-<span num="18">    // Single variable declare and assign</span>
-<span num="19">    d := "var d"</span>
-<span num="20">    fmt.Println(d)</span>
-<span num="21">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> <span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#75715e">// Concatenate and calculate
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"foo"</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">"bar"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"12.3 * 2 ="</span>, <span style="color:#ae81ff">12.3</span><span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>	<span style="color:#75715e">// Variables always have a initialized value
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">uint</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"a ="</span>, <span style="color:#a6e22e">a</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>	<span style="color:#75715e">// Multiple variables with multiple types
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span> = <span style="color:#ae81ff">10.5</span>, <span style="color:#e6db74">"chicken"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">"b(%v): %T, c(%v): %T\n"</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">c</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>	<span style="color:#75715e">// Single variable declare and assign
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">d</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">"var d"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">d</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">16</span>
@@ -484,30 +480,25 @@
       
         <h3>Flow control: for</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import "fmt"</span>
-<span num="4"></span>
-<span num="5">func main() {</span>
-<span num="6">    // A classical for loop which counts from 1 to 3</span>
-<span num="7">    for n := 1; n &lt; 4; n++ {</span>
-<span num="8">        fmt.Println("n =", n)</span>
-<span num="9">    }</span>
-<span num="10"></span>
-<span num="11">    // Go doesn't have a while statement, for is used</span>
-<span num="12">    sum := 1</span>
-<span num="13">    for sum &lt; 10 {</span>
-<span num="14">        sum++</span>
-<span num="15">    }</span>
-<span num="16">    fmt.Println("sum =", sum)</span>
-<span num="17">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> <span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#75715e">// A classical for loop which counts from 1 to 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">n</span> &lt; <span style="color:#ae81ff">4</span>; <span style="color:#a6e22e">n</span><span style="color:#f92672">++</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"n ="</span>, <span style="color:#a6e22e">n</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>	}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>	<span style="color:#75715e">// Go doesn't have a while statement, for is used
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">sum</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">sum</span> &lt; <span style="color:#ae81ff">10</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>		<span style="color:#a6e22e">sum</span><span style="color:#f92672">++</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>	}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"sum ="</span>, <span style="color:#a6e22e">sum</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">17</span>
@@ -519,30 +510,25 @@
       
         <h3>Flow control: if/else</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "fmt"</span>
-<span num="5">    "time"</span>
-<span num="6">)</span>
-<span num="7"></span>
-<span num="8">func main() {</span>
-<span num="9">    // Variables declared inside an if are also available in the else</span>
-<span num="10">    if name, offset := time.Now().Zone(); offset == 3600 {</span>
-<span num="11">        fmt.Println("We are here at UTC + 1 hour! (name: ", name, ")")</span>
-<span num="12">    } else if offset == 7200 {</span>
-<span num="13">        fmt.Println("We are here at UTC + 2 hour! (name: ", name, ")")</span>
-<span num="14">    } else {</span>
-<span num="15">        fmt.Println("We are at", name)</span>
-<span num="16">    }</span>
-<span num="17">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> (
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>	<span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>	<span style="color:#e6db74">"time"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>	<span style="color:#75715e">// Variables declared inside an if are also available in the else
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">offset</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>().<span style="color:#a6e22e">Zone</span>(); <span style="color:#a6e22e">offset</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3600</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"We are here at UTC + 1 hour! (name: "</span>, <span style="color:#a6e22e">name</span>, <span style="color:#e6db74">")"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">offset</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">7200</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"We are here at UTC + 2 hour! (name: "</span>, <span style="color:#a6e22e">name</span>, <span style="color:#e6db74">")"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>	} <span style="color:#66d9ef">else</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"We are at"</span>, <span style="color:#a6e22e">name</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>	}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">18</span>
@@ -554,32 +540,28 @@
       
         <h3>Flow control: switch</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "fmt"</span>
-<span num="5">    "time"</span>
-<span num="6">)</span>
-<span num="7"></span>
-<span num="8">func main() {</span>
-<span num="9">    switch time.Tuesday {</span>
-<span num="10">    // You can use commas in a case to cover multiple statements</span>
-<span num="11">    case time.Tuesday, time.Friday:</span>
-<span num="12">        // By default, go switch-cases don't fallthrough</span>
-<span num="13">        fallthrough</span>
-<span num="14">    case time.Saturday:</span>
-<span num="15">        fmt.Println("Today is the big day")</span>
-<span num="16">    default:</span>
-<span num="17">        fmt.Println("Its a regular day")</span>
-<span num="18">    }</span>
-<span num="19">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> (
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>	<span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>	<span style="color:#e6db74">"time"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>	<span style="color:#75715e">// Yes the day of the course is Tuesday
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Tuesday</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>	<span style="color:#75715e">// You can use commas in a case to cover multiple statements
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Tuesday</span>, <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Friday</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>		<span style="color:#75715e">// By default, go switch-cases don't fallthrough
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">fallthrough</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>	<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Saturday</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"Today is the big day"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>	<span style="color:#66d9ef">default</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">"Its a regular day"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>	}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">19</span>
@@ -591,27 +573,22 @@
       
         <h3>Data structures: array &amp; slice</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import "fmt"</span>
-<span num="4"></span>
-<span num="5">func main() {</span>
-<span num="6">    // An array is a fixed-size object</span>
-<span num="7">    wordarr := [4]byte{0xde, 0xad, 0xbe, 0xef}</span>
-<span num="8"></span>
-<span num="9">    // Convert the array to a slice and typecast to string</span>
-<span num="10">    wordsli := wordarr[:]</span>
-<span num="11"></span>
-<span num="12">    // Print the length and capacity of the slice (and hex)</span>
-<span num="13">    fmt.Printf("len(%d), cap(%d), %x\n", len(wordsli), cap(wordsli), string(wordsli))</span>
-<span num="14">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> <span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#75715e">// An array is a fixed-size object
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">wordarr</span> <span style="color:#f92672">:=</span> [<span style="color:#ae81ff">4</span>]<span style="color:#66d9ef">byte</span>{<span style="color:#ae81ff">0xde</span>, <span style="color:#ae81ff">0xad</span>, <span style="color:#ae81ff">0xbe</span>, <span style="color:#ae81ff">0xef</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>	<span style="color:#75715e">// Convert the array to a slice and typecast to string
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">wordsli</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">wordarr</span>[:]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	<span style="color:#75715e">// Print the length and capacity of the slice (and hex)
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">"len(%d), cap(%d), %x\n"</span>, len(<span style="color:#a6e22e">wordsli</span>), cap(<span style="color:#a6e22e">wordsli</span>), string(<span style="color:#a6e22e">wordsli</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">20</span>
@@ -623,30 +600,25 @@
       
         <h3>Data structures: struct</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import "fmt"</span>
-<span num="4"></span>
-<span num="5">// Create a struct to store person information</span>
-<span num="6">type Person struct {</span>
-<span num="7">    Name string</span>
-<span num="8">    Age  int</span>
-<span num="9">}</span>
-<span num="10"></span>
-<span num="11">func main() {</span>
-<span num="12">    // Create and initialize a person</span>
-<span num="13">    p := Person{Name: "Jerry", Age: 30}</span>
-<span num="14"></span>
-<span num="15">    // Print struct including property names</span>
-<span num="16">    fmt.Printf("%+v\n", p)</span>
-<span num="17">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> <span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#75715e">// Create a struct to store person information
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Person</span> <span style="color:#66d9ef">struct</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>	<span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">string</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>	<span style="color:#a6e22e">Age</span>  <span style="color:#66d9ef">int</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	<span style="color:#75715e">// Create and initialize a person
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">p</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Person</span>{<span style="color:#a6e22e">Name</span>: <span style="color:#e6db74">"Jerry"</span>, <span style="color:#a6e22e">Age</span>: <span style="color:#ae81ff">30</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>	<span style="color:#75715e">// Print struct including property names
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">"%+v\n"</span>, <span style="color:#a6e22e">p</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">21</span>
@@ -658,34 +630,29 @@
       
         <h3>Data structures: map</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import "fmt"</span>
-<span num="4"></span>
-<span num="5">type Location struct {</span>
-<span num="6">    Latitude, Longitude float64</span>
-<span num="7">}</span>
-<span num="8"></span>
-<span num="9">func main() {</span>
-<span num="10">    // Allocate an empty map with make</span>
-<span num="11">    m := make(map[string]Location)</span>
-<span num="12"></span>
-<span num="13">    // Store the location of Heliox</span>
-<span num="14">    m["Heliox"] = Location{</span>
-<span num="15">        51.485945, 5.392263,</span>
-<span num="16">    }</span>
-<span num="17"></span>
-<span num="18">    // Test and get the value of key "Heliox"</span>
-<span num="19">    loc, ok := m["Heliox"]</span>
-<span num="20">    fmt.Println(loc, ok)</span>
-<span num="21">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> <span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Location</span> <span style="color:#66d9ef">struct</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#a6e22e">Latitude</span>, <span style="color:#a6e22e">Longitude</span> <span style="color:#66d9ef">float64</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>	<span style="color:#75715e">// Allocate an empty map with make
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">m</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Location</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>	<span style="color:#75715e">// Store the location of Heliox
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">m</span>[<span style="color:#e6db74">"Heliox"</span>] = <span style="color:#a6e22e">Location</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>		<span style="color:#ae81ff">51.485945</span>, <span style="color:#ae81ff">5.392263</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>	}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>	<span style="color:#75715e">// Test and get the value of key "Heliox"
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">loc</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">m</span>[<span style="color:#e6db74">"Heliox"</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">loc</span>, <span style="color:#a6e22e">ok</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">22</span>
@@ -697,25 +664,20 @@
       
         <h3>Pointers</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import "fmt"</span>
-<span num="4"></span>
-<span num="5">func main() {</span>
-<span num="6">    i := 42</span>
-<span num="7"></span>
-<span num="8">    p := &amp;i         // point to i</span>
-<span num="9">    fmt.Println(*p) // read i through the pointer</span>
-<span num="10">    *p = 21         // set i through the pointer</span>
-<span num="11">    fmt.Println(i)  // see the new value of i</span>
-<span num="12">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> <span style="color:#e6db74">"fmt"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">42</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>	<span style="color:#a6e22e">p</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">i</span>         <span style="color:#75715e">// point to i
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">p</span>) <span style="color:#75715e">// read i through the pointer
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#75715e"></span>	<span style="color:#f92672">*</span><span style="color:#a6e22e">p</span> = <span style="color:#ae81ff">21</span>         <span style="color:#75715e">// set i through the pointer
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">i</span>)  <span style="color:#75715e">// see the new value of i
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e"></span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">23</span>
@@ -727,34 +689,29 @@
       
         <h3>Methods &amp; interfaces</h3>
         
-  <div class="code playground">
-
-
-<pre><span num="1">package main</span>
-<span num="2"></span>
-<span num="3">import (</span>
-<span num="4">    "io"</span>
-<span num="5">    "os"</span>
-<span num="6">    "strings"</span>
-<span num="7">)</span>
-<span num="8"></span>
-<span num="9">// Read data from r and write to os.Stdout</span>
-<span num="10">//  the io.Reader is an interface with only a Read method</span>
-<span num="11">func WriteToStdout(r io.Reader) {</span>
-<span num="12">    // Copy to an io.Writer (dest) from an io.Reader (source)</span>
-<span num="13">    //  this can be anything! File, network socket etc.</span>
-<span num="14">    io.Copy(os.Stdout, r)</span>
-<span num="15">}</span>
-<span num="16"></span>
-<span num="17">func main() {</span>
-<span num="18">    // Create an io.Reader from a string and print it to os.Stdout</span>
-<span num="19">    sr := strings.NewReader("Hello string reader!")</span>
-<span num="20">    WriteToStdout(sr)</span>
-<span num="21">}</span>
+  <br>
+  <pre style="color:#f8f8f2;background-color:#272822"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#f92672">import</span> (
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>	<span style="color:#e6db74">"io"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>	<span style="color:#e6db74">"os"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#e6db74">"strings"</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#75715e">// Read data from r and write to os.Stdout
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#75715e">//  the io.Reader is an interface with only a Read method
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">WriteToStdout</span>(<span style="color:#a6e22e">r</span> <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">Reader</span>) {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	<span style="color:#75715e">// Copy to an io.Writer (dest) from an io.Reader (source)
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#75715e"></span>	<span style="color:#75715e">//  this can be anything! File, network socket etc.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">Copy</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stdout</span>, <span style="color:#a6e22e">r</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>	<span style="color:#75715e">// Create an io.Reader from a string and print it to os.Stdout
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">sr</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">NewReader</span>(<span style="color:#e6db74">"Hello string reader!"</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>	<span style="color:#a6e22e">WriteToStdout</span>(<span style="color:#a6e22e">sr</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>}
 </pre>
-
-
-</div><div class="buttons"><button class="run">Run</button></div><div class="ui-resizable output" style="display: none;"><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: block;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90; display: block;"></div><div class="buttons"><button class="run">Run</button><button class="kill">Kill</button><button class="close">Close</button></div><pre></pre></div>
 
       
       <span class="pagenumber">24</span>
@@ -764,18 +721,89 @@
   
       <article>
       
-        <h3>Workshop &amp; Q&amp;A</h3>
+        <h2>Workshop &amp; Q&amp;A</h2>
+      
+      <span class="pagenumber">25</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Ideas?</h3>
         
   <ul>
   
-    <li>Create a todo task list manager</li>
+    <li><a href="https://tour.golang.org/" target="_blank">A Tour of Go</a></li>
   
-    <li>HTTP API with JSON?</li>
+    <li>Reading JSON/XML/JSON/YAML files</li>
+  
+    <li>Program a TCP/Websocket server</li>
+  
+    <li><a href="https://gowebexamples.com/json/" target="_blank">HTTP server with JSON API</a></li>
+  
+  </ul>
+
+  
+  <p>
+    Playing around on <a href="https://play.golang.org/" target="_blank">play.golang.org</a>
+  </p>
+  
+
+      
+      <span class="pagenumber">26</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>More information</h3>
+        
+  <ul>
+  
+    <li><a href="https://blog.golang.org/index" target="_blank">blog.golang.org</a></li>
+  
+    <li><a href="https://talks.golang.org/" target="_blank">talks.golang.org</a></li>
+  
+    <li><a href="https://awesome-go.com/" target="_blank">awesome-go.com</a></li>
+  
+    <li><a href="https://gobyexample.com/" target="_blank">Go by example.com</a></li>
+  
+    <li><a href="https://yourbasic.org/golang/" target="_blank">Go go-to guide</a></li>
+  
+    <li><a href="https://learn.go.dev/" target="_blank">Learn - Go.dev</a></li>
   
   </ul>
 
       
-      <span class="pagenumber">25</span>
+      <span class="pagenumber">27</span>
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>More information (2)</h3>
+        
+  <ul>
+  
+    <li><a href="https://www.golang-book.com/books/intro" target="_blank">An Introduction to Programming in Go</a></li>
+  
+    <li><a href="https://youtube.com/c/justforfunc" target="_blank">JustForFunc: Programming in Go</a></li>
+  
+    <li><a href="https://tinygo.org/" target="_blank">TinyGo</a></li>
+  
+    <li><a href="https://gobot.io/" target="_blank">Gobot</a></li>
+  
+    <li><a href="https://embd.kidoman.io/" target="_blank">Golang embedded framework</a></li>
+  
+    <li><a href="https://github.com/topics/go" target="_blank">Github.com Go Topic</a></li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">28</span>
       </article>
   
   
