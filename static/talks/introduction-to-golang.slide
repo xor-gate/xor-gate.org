@@ -1,5 +1,5 @@
 Introduction to Golang
-As an alternative to C & C++
+Scratching the surface
 3 Dec 2019
 Tags: golang, c, c++
 
@@ -9,17 +9,18 @@ jerry.jacobs@heliox.nl
 
 * Welcome!
 
+- Presentation can be found on [[https://xor-gate.org][xor-gate.org]]
+
 .image introduction-to-golang/golang-logo.png
-.image introduction-to-golang/golang-mascot.jpg
 
 * Introducing myself
 
-- Installed [[https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_5.10_(Breezy_Badger)][Ubuntu 5.10 long time ago]]
-- Open-source enthousiast for +14 years
+- Installed [[https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_5.04_(Hoary_Hedgehog)][Ubuntu 5.04 long time ago]]
+- Open-source & Linux enthousiast for +14 years
 - Highly-experienced with UNIX-like environments
 - Programming C and other languages for +10 years
-- Big love for Embedded Systems
-- Deployed Go in production systems for 2.5 years (Custom IoT Cloud Platform)
+- Self-learning Go since Dec 2015
+- Deployed Go in production systems +2.5 years
 
 * Agenda
 
@@ -95,12 +96,12 @@ Go has just a single tool
 
 * Who uses it?
 
-- Dutch government
-- Bol.com
-- Uber
-- Netflix
-- Dropbox
-- Amazon
+- [[https://github.com/google?language=go][Google]]
+- [[https://github.com/bolcom?language=go][Bol.com]]
+- [[https://github.com/uber?language=go][Uber]]
+- [[https://github.com/netflix?language=go][Netflix]]
+- [[https://github.com/dropbox?language=go][Dropbox]]
+- [[https://github.com/digitalocean?language=go][Digital Ocean]]
 - [[https://github.com/golang/go/wiki/GoUsers][And the list goes on]]...
 
 * Language howto 
@@ -118,9 +119,10 @@ Go has an excellent [[https://golang.org/pkg/][standard library]]
 * Language Organization
 
 - [[https://golang.org/ref/spec#Source_code_representation][Source code and strings are Unicode text]] encoded in UTF-8
-- Code is organized in [[https://golang.org/ref/spec#Packages][packages]]
-- [[https://golang.org/ref/spec#Interface_types][[Interface]] is implicit by [[https://golang.org/ref/spec#Method_sets][method set]]
+- Code is [[https://golang.org/doc/code.html][organized]] in [[https://golang.org/ref/spec#Packages][packages]]
+- [[https://golang.org/ref/spec#Interface_types][Interface]] is implicit by [[https://golang.org/ref/spec#Method_sets][method set]]
 - Go has no public/private keyword, just use uppercase for [[https://golang.org/ref/spec#Exported_identifiers][exporting identifiers]]
+- Built-in support for [[https://gobyexample.com/multiple-return-values][multiple return values]]
 
 * Hello World!
 
@@ -164,13 +166,33 @@ Compile and run:
 
 * Methods & interfaces
 
-.play -numbers -edit introduction-to-golang/methods-and-interfaces.go HL1
+.play -numbers -edit introduction-to-golang/methods-and-interfaces.go
 
 * Workshop & Q&A
 
 * Ideas?
 
+- [[https://tour.golang.org/][A Tour of Go]]
 - Reading JSON/XML/JSON/YAML files
-- Create a todo list manager
 - Program a TCP/Websocket server
-- HTTP server with JSON API
+- [[https://gowebexamples.com/json/][HTTP server with JSON API]]
+
+Playing around on [[https://play.golang.org/][play.golang.org]]
+
+* More information
+
+- [[https://blog.golang.org/index][blog.golang.org]]
+- [[https://talks.golang.org][talks.golang.org]]
+- [[https://awesome-go.com/][awesome-go.com]]
+- [[https://gobyexample.com/][Go by example.com]]
+- [[https://yourbasic.org/golang/][Go go-to guide]]
+- [[https://learn.go.dev][Learn - Go.dev]]
+
+* More information (2)
+
+- [[https://www.golang-book.com/books/intro][An Introduction to Programming in Go]]
+- [[https://youtube.com/c/justforfunc][JustForFunc: Programming in Go]]
+- [[https://tinygo.org][TinyGo]]
+- [[https://gobot.io][Gobot]]
+- [[https://embd.kidoman.io][Golang embedded framework]]
+- [[https://github.com/topics/go][Github.com Go Topic]]
