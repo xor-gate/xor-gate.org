@@ -24,5 +24,5 @@ draft: true
 **2019**
 
 [![Garlic Harvest 2019](/images/garlic-joy/thumb-garlic-2019-harvest.jpg)](/images/garlic-joy/garlic-2019-harvest.png)
-[![Garlic Harvest 2019](/images/garlic-joy/thumb-garlic-2019-harvest-2.jpg)](images/garlic-joy/garlic-2019-harvest-2.png)
+[![Garlic Harvest 2019](/images/garlic-joy/thumb-garlic-2019-harvest-2.jpg)](/images/garlic-joy/garlic-2019-harvest-2.png)
 [![Garlic Planting 2019](/images/garlic-joy/thumb-garlic-2019-planting.jpg)](/images/garlic-joy/garlic-2019-planting.png)
