@@ -16,3 +16,8 @@
 /static/images/garlic-joy/thumb-garlic-2019-harvest-2.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/garlic-joy/thumb-garlic-2019-harvest.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/garlic-joy/thumb-garlic-2019-planting.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/back-on-track-in-2020-with-todoist/dutch-terschelling-dunes.jpeg filter=lfs diff=lfs merge=lfs -text
+/static/images/back-on-track-in-2020-with-todoist/intro-image.jpeg filter=lfs diff=lfs merge=lfs -text
+/static/images/back-on-track-in-2020-with-todoist/todoist-theme-days.png filter=lfs diff=lfs merge=lfs -text
+/static/images/back-on-track-in-2020-with-todoist/todolist-spongebob.gif filter=lfs diff=lfs merge=lfs -text
+/static/images/back-on-track-in-2020-with-todoist/trip-belarus-minsk-victory-square.jpeg filter=lfs diff=lfs merge=lfs -text

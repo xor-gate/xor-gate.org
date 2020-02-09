@@ -11,3 +11,5 @@ draft-deploy: draft
 	rclone copy build/draft/ vserver271:domains/xor-gate.org/private_html/draft
 theme:
 	git submodule update --init
+watch:
+	hugo server -w
