@@ -1,8 +1,12 @@
 ---
-title: "Garlic Joy"
-date: 2019-12-14T09:52:06+01:00
-draft: true
+title: "Multi-year Planting Garlic Joy"
+date: 2020-01-11
+tags: ["gardening"]
 ---
+
+I own and maintain a community garden for some years now, and grow garlic now for over 5 years with plenty of joy and bulbs!
+A picture says more than thousands words still counts, so I smashed to getter a multi-year collage planting, growing and harvesting
+the personal garlic.
 
 **2015**
 
