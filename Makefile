@@ -12,4 +12,4 @@ draft-deploy: draft
 theme:
 	git submodule update --init
 watch:
-	hugo server -w
+	hugo server -w -D
