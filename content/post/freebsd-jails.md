@@ -4,7 +4,7 @@ date: 2020-02-13T22:03:25+01:00
 tags: ["freebsd", "docker", "containers"]
 ---
 
-Because I recently switched from [Linux](https://en.wikipedia.org/wiki/Linux) to [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD) I don't have Linux Containers (e.g Docker). A
+Because I switched [this year](/post/switching-from-linux-to-freebsd) from [Linux](https://en.wikipedia.org/wiki/Linux) to [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD) I don't have Linux Containers (e.g Docker). A
  much simpler containerization is FreeBSD [jail(8)](https://www.freebsd.org/cgi/man.cgi?query=jail) which has been around
 since the FreeBSD 4.x which is released over [20 years](https://en.wikipedia.org/wiki/FreeBSD_version_history#FreeBSD_4) ago!
 A note must be made It is not as advanced as the Linux counterpart with its [complex namespaces](https://medium.com/@teddyking/linux-namespaces-850489d3ccf) implemented as [CLONE_*](https://github.com/torvalds/linux/blob/9065e0636036e4f8a6f65f9c34ed384e4b776273/tools/include/uapi/linux/sched.h#L28-L33) system calls to limit memory, CPU resources etc, etc. This post is based on FreeBSD release 12.1 so your results may vary.
