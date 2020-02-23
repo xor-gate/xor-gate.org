@@ -1,6 +1,6 @@
 ---
 date: "2019-03-04"
-tags: ["beer", "homebrew", "red-ale", "craftbeer", "handmade"]
+tags: ["beer", "homebrew"]
 title: "March it, the Irish Red Ale"
 ---
 
