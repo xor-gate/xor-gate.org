@@ -21,3 +21,8 @@
 /static/images/back-on-track-in-2020-with-todoist/todoist-theme-days.png filter=lfs diff=lfs merge=lfs -text
 /static/images/back-on-track-in-2020-with-todoist/todolist-spongebob.gif filter=lfs diff=lfs merge=lfs -text
 /static/images/back-on-track-in-2020-with-todoist/trip-belarus-minsk-victory-square.jpeg filter=lfs diff=lfs merge=lfs -text
+/static/images/macbook-battery-replacement/IMG_0180.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/macbook-battery-replacement/charging-cycles-screenshot.png filter=lfs diff=lfs merge=lfs -text
+/static/images/the-forgotten-red-ale/IMG_0240.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/the-forgotten-red-ale/IMG_0243.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/the-forgotten-red-ale/IMG_1479.JPG filter=lfs diff=lfs merge=lfs -text
