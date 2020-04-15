@@ -1,6 +1,5 @@
 deploy:
 	$(MAKE) prod-deploy
-	$(MAKE) draft-deploy
 prod:
 	hugo --destination build/prod
 prod-deploy: prod

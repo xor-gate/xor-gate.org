@@ -27,3 +27,5 @@
 /static/images/the-forgotten-red-ale/IMG_0243.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/the-forgotten-red-ale/IMG_1479.JPG filter=lfs diff=lfs merge=lfs -text
 /static/images/espresso-brownies/IMG_0136.JPG filter=lfs diff=lfs merge=lfs -text
+/static/images/field-pea-and-bacon-recipe/IMG_0116.JPG filter=lfs diff=lfs merge=lfs -text
+/static/images/field-pea-and-bacon-recipe/IMG_0567.jpg filter=lfs diff=lfs merge=lfs -text
