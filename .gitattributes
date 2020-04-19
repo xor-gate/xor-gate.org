@@ -29,3 +29,7 @@
 /static/images/espresso-brownies/IMG_0136.JPG filter=lfs diff=lfs merge=lfs -text
 /static/images/field-pea-and-bacon-recipe/IMG_0116.JPG filter=lfs diff=lfs merge=lfs -text
 /static/images/field-pea-and-bacon-recipe/IMG_0567.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/spring-ale/IMG_0613.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/spring-ale/IMG_0635.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/spring-ale/IMG_0636.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/spring-ale/IMG_0638.jpg filter=lfs diff=lfs merge=lfs -text
