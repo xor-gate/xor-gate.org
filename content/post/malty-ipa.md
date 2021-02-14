@@ -1,6 +1,7 @@
 ---
 title: "Malty Ipa"
 date: 2021-01-10T18:29:54+01:00
+tags: ["beer", "homebrew"]
 ---
 
 # Brewlog
@@ -11,7 +12,7 @@ date: 2021-01-10T18:29:54+01:00
 
 Brewed with the BIAB (brew in a bag) method single infusion 90 minute mash @ 66 degree celsius. 90 minute ~33 liter boil with 30 liter in the fermenter. Final bottle amount of 24 liter @72 bottles.
 
-# Ingredients
+# Fermentables
 
 | Amount | Ingredient       | Color    | Percentage |
 | ------ | ---------------- | -------- | ---------- |

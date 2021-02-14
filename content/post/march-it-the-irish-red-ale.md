@@ -21,26 +21,25 @@ Brewed with the BIAB (brew in a bag) method single infusion 90 minute mash @ 66 
 
 **Ingredients**
 
-| Amount     | Ingredient           | Color    | Percentage |
-|------------|----------------------|----------|------------|
-| 3.5 kg     | Pilsner              | 3 EBC    | 53.5%      |
-| 2.2 kg     | Marris otter pale    | 8.5 EBC  | 33.5%      |
-| 225 gr     | Carared              | 51 EBC   | 3.4%       |
-| 195 gr     | Flaked oats          | 4.5 EBC  | 3%         |
-| 175 gr     | Abbey malt           | 43 EBC   | 2.7%       |
-| 150 gr     | Carahell             | 27 EBC   | 2.3%       |
-| 75 gr      | Pale chocolate       | 600 EBC  | 1.1%       |
-| 50 gr      | Pale light chocolate | 1200 EBC | 0.8%       |
-|------------|----------------------|----------|------------|
-| 110 gr     | Cane sugar (priming) | n/a      | n/a        |
+| Amount       | Ingredient             | Color      | Percentage   |
+| ------------ | ---------------------- | ---------- | ------------ |
+| 3.5 kg       | Pilsner                | 3 EBC      | 53.5%        |
+| 2.2 kg       | Marris otter pale      | 8.5 EBC    | 33.5%        |
+| 225 gr       | Carared                | 51 EBC     | 3.4%         |
+| 195 gr       | Flaked oats            | 4.5 EBC    | 3%           |
+| 175 gr       | Abbey malt             | 43 EBC     | 2.7%         |
+| 150 gr       | Carahell               | 27 EBC     | 2.3%         |
+| 75 gr        | Pale chocolate         | 600 EBC    | 1.1%         |
+| 50 gr        | Pale light chocolate   | 1200 EBC   | 0.8%         |
+| ------------ | ---------------------- | ---------- | ------------ |
+| 110 gr       | Cane sugar (priming)   | n/a        | n/a          |
 
 **Hops**
 
 | Time   | Amount | Variety            | Alpha Acids |
-|--------|--------|--------------------|-------------|
+| ------ | ------ | ------------------ | ----------- |
 | 60 min | 25 gr  | East Kent Goldings | 6.5 AA      |
 | 60 min | 35 gr  | Fuggles            | 6   AA      |
-
 
 **Timing**
 
