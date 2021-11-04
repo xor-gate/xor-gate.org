@@ -45,7 +45,7 @@ Brewed with the BIAB (brew in a bag) method single infusion 90 minute mash @ 66 
 
 * **Brewed at:** 20 Januari 2019
 * **Cold crash:** 25 Januari - 3 Februari
-* **First syphon:** 8 Februari 2019 (19 days)
+* **Seconday fermentation:** 8 Februari 2019 (19 days)
 * **Bottle day:** 4 March 2019 (43 days)
 * **Lager:** 8 April 2019 (85 days)
 
