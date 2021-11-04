@@ -4,7 +4,7 @@ date: 2021-10-23T09:46:56+02:00
 tags: ["beer", "homebrew"]
 ---
 
-Attempt for an extra dry red ale. First time I added 5% all-purpose white wheat flour to become hopefully a extra clear beer due to extra gluten.
+Attempt for an extra dry red ale. First time I added 5% all-purpose white wheat flour to become hopefully a extra clear beer due to extra gluten. I split of an apple juice infused beer from this batch [Apple Red Ale](/post/apple-red-ale)
 
 # Brewlog
 
@@ -50,8 +50,40 @@ I mashed-in with enough water so I could add boiling water for the other steps. 
 
 # Timing
 
-* Brewed at 23 october 2021
+* **Brewed at**: 23 october 2021
+* **Secondary fermentation**: 6 november 2021 (14 days)
+* **Bottle day**: TBD (21 days)
 
-* Secondary fermentation TBD
+# Pictures
 
-* Bottled at TBD
+![malt-milling](/images/autumn-dry-irish-red-ale/malt-milling.jpg)
+
+**Malt milling**
+
+![mash-in](/images/autumn-dry-irish-red-ale/mash-in.jpg)
+
+**Mashing**
+
+![mash-isolation](/images/autumn-dry-irish-red-ale/mash-isolation.jpg)
+
+**Mash rest with isolation**
+
+![wort-after-mash](/images/autumn-dry-irish-red-ale/wort-after-mash.jpg)
+
+**Wort after mash color**
+
+![hop-boil](/images/autumn-dry-irish-red-ale/hop-boil.jpg)
+
+**Hop boiling with special sieve**
+
+![hot-wort](/images/autumn-dry-irish-red-ale/hot-wort.jpg)
+
+**Hot wort with protein flaking**
+
+![chiller](/images/autumn-dry-irish-red-ale/chiller.jpg)
+
+**Chilling the wort**
+
+![fermenter-30-liter](/images/autumn-dry-irish-red-ale/fermenter-30-liter.jpg)
+
+**Final result in the 30 liter fermenter**
