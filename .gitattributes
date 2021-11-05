@@ -49,3 +49,8 @@
 /static/images/autumn-dry-irish-red-ale/hop-boil.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/autumn-dry-irish-red-ale/malt-milling.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/autumn-dry-irish-red-ale/mash-in.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/apple-juice-bag.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/fermentation-containers.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/fermentation-of-beer.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/autumn-dry-irish-red-ale/after-first-fermentation.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/autumn-dry-irish-red-ale/syphoning-first-fermentation.jpg filter=lfs diff=lfs merge=lfs -text

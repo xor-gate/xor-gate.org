@@ -6,6 +6,8 @@ tags: ["beer", "homebrew"]
 
 Attempt for an extra dry red ale. First time I added 5% all-purpose white wheat flour to become hopefully a extra clear beer due to extra gluten. I split of an apple juice infused beer from this batch [Apple Red Ale](/post/apple-red-ale)
 
+![after-first-fermentation](/images/autumn-dry-irish-red-ale/after-first-fermentation.jpg)
+
 # Brewlog
 
 - Bottle ID TBD
@@ -51,8 +53,8 @@ I mashed-in with enough water so I could add boiling water for the other steps. 
 # Timing
 
 * **Brewed at**: 23 october 2021
-* **Secondary fermentation**: 6 november 2021 (14 days)
-* **Bottle day**: TBD (21 days)
+* **Secondary fermentation and dry hopping**: 5 november 2021 (13 days)
+* **Bottle day**: TBD
 
 # Pictures
 
@@ -87,3 +89,19 @@ I mashed-in with enough water so I could add boiling water for the other steps. 
 ![fermenter-30-liter](/images/autumn-dry-irish-red-ale/fermenter-30-liter.jpg)
 
 **Final result in the 30 liter fermenter**
+
+![small-ferment-bottle](/images/autumn-dry-irish-red-ale/small-ferment-bottle.jpg)
+
+**Small remainder in a gallon fermenter**
+
+![first-flow](/images/autumn-dry-irish-red-ale/first-flow.jpg)
+
+**First beer flow**
+
+![syphoning-first-fermentation](/images/autumn-dry-irish-red-ale/syphoning-first-fermentation.jpg)
+
+**Syphoning first fermentation**
+
+![bottom-yeast-trub](/images/autumn-dry-irish-red-ale/bottom-yeast-trub.jpg)
+
+**Bottom yeast trub**
