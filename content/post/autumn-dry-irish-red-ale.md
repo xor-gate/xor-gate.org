@@ -1,6 +1,6 @@
 ---
 title: "Autumn Dry Irish Red Ale"
-date: 2021-10-23T09:46:56+02:00
+date: 2021-11-26T09:59:59+01:00
 tags: ["beer", "homebrew"]
 ---
 
@@ -10,12 +10,13 @@ Attempt for an extra dry red ale. First time I added 5% all-purpose white wheat 
 
 # Brewlog
 
-- Bottle ID TBD
+- Bottle ID 211
 - ABV 4.8% (78% efficiency)
 - IBU 26.1
 - EBC 17.1
 - Yeast: Fermentis Safale-US5 Dry Ale
 - Fermentor target: 33 liter
+- Result: 68 bottles of 30cl (20,4 liters)
 
 **Mash scheme**
 
@@ -41,7 +42,7 @@ I mashed-in with enough water so I could add boiling water for the other steps. 
 | 250 g  | Biscuit                            | 50 EBC  |
 | 325 g  | White wheat flour                  | -       |
 
-75 gram prime sugar (1,5 volume of CO2)
+60 gram [priming](https://www.brewersfriend.com/beer-priming-calculator/) table sugar (for 1,6 volume of CO2) at bottle time
 
 # Hops
 
@@ -53,8 +54,8 @@ I mashed-in with enough water so I could add boiling water for the other steps. 
 # Timing
 
 * **Brewed at**: 23 october 2021
-* **Secondary fermentation and dry hopping**: 5 november 2021 (13 days)
-* **Bottle day**: TBD
+* **Secondary fermentation and dry hopping**: 5 november 2021
+* **Bottle day**: 25 november 2021
 
 # Pictures
 

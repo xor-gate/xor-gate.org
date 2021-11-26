@@ -54,3 +54,7 @@
 /static/images/apple-red-ale/fermentation-of-beer.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/autumn-dry-irish-red-ale/after-first-fermentation.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/autumn-dry-irish-red-ale/syphoning-first-fermentation.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/bottle-cleaning-empty-rack.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/bottle-cleaning-kitchen-countertop.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/bottle-cleaning-rack-filled.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/apple-red-ale/cleaned-bottle-crates.jpg filter=lfs diff=lfs merge=lfs -text

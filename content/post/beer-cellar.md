@@ -1,6 +1,6 @@
 ---
 title: "Beer Cellar"
-date: 2021-11-04T19:14:25+01:00
+date: 2021-11-26T10:00:00+01:00
 tags: ["beer", "homebrew"]
 ---
 
@@ -15,8 +15,8 @@ They are sorted from new to old.
 
 | Bottle ID | Beer                                                       | Bottled at |
 | --------- | ---------------------------------------------------------- | ---------- |
-| TBD       | [Apple Red Ale](/post/apple-red-ale/)                      | TBD        |
-| TBD       | [Autumn Dry Irish Red Ale](post/autumn-dry-irish-red-ale/) | TBD        |
+| 311       | [Apple Red Ale](/post/apple-red-ale/)                      | 2021-11-25 |
+| 211       | [Autumn Dry Irish Red Ale](post/autumn-dry-irish-red-ale/) | 2021-11-25 |
 | 104       | [Rye not so pale ale](/post/rye-not-so-pale-ale)           | 2021-04-10 |
 | 101       | [Malty Ipa](/post/malty-ipa/)                              | 2021-01-10 |
 
