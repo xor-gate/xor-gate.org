@@ -23,8 +23,9 @@ PygmentsOptions = "linenos=table"
 
 [markup]
   [tableOfContents]
-    endLevel = 0
-    startLevel = 0
+    startLevel = 1
+    endLevel = 2
+    ordered = false
 
 [blackfriday]
    plainIDAnchors = true
@@ -96,8 +97,10 @@ defaultContentLanguage = "en"           # Default language to use
 
   [params.social]                                         # 社交链接
     a-email = "mailto:hello@xor-gate.org"
-    e-linkedin = "https://linkedin.com/in/xorgate"
-    g-github = "https://github.com/xor-gate"
-    m-instagram = "https://instagram.com/x0rgat3"
-    g-soundcloud = "https://soundcloud.com/xor-gate/tracks"
+    b-linkedin = "https://linkedin.com/in/xorgate"
+    c-github = "https://github.com/xor-gate"
+    d-stack-overflow = "https://stackoverflow.com/users/1836746/jerry-jacobs"
+    e-instagram = "https://instagram.com/x0rgat3"
+    f-soundcloud = "https://soundcloud.com/xor-gate/tracks"
+    g-youtube = "https://www.youtube.com/channel/UCu3DyXOh35rX1XoC9cUUF3A"
     #m-spotify = "https://open.spotify.com/user/wafelijzer89"
