@@ -1,0 +1,50 @@
+---
+title: "A tale about open-source software experience"
+date: 2021-12-28T10:30:00+01:00
+tags: ["Linux", "FreeBSD", "macOS", "BSD", "open-source"]
+---
+
+This blog post is about my personal experiences with open-source software.
+
+![linux-logo](/images/a-tale-about-open-source-software-experience/Tux.png)
+
+[Linux](https://en.wikipedia.org/wiki/Linux) is not an operating system (OS) as most people think it's only a monolithic kernel with many advanced specific technologies. This means the user-space applications and tools come from other places like the GNU project. That is why Linux is also written as GNU/Linux.
+
+There are exceptions like [Alpine Linux](https://www.wikiwand.com/en/Alpine_Linux) which try to not use GNU applications and [GNU C library](https://en.wikipedia.org/wiki/Glibc) (glibc) in their base OS. It feels more like a [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) operating system than a Linux distribution. Alpine uses its own package-management system, [apk-tools](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management), which originally was a collection of [shell scripts](https://sourceforge.net/projects/apk-tools/) but was later [rewritten in C](https://git.alpinelinux.org/apk-tools/). It is a solid, lean and minimal OS which can run from servers to embedded devices.
+
+![linux-logo](/images/a-tale-about-open-source-software-experience/Knoppix_logo.png)
+
+I started approximate 17 years ago with a Linux distribution called [Knoppix Linux](https://en.wikipedia.org/wiki/Knoppix) on a ['Live' DVD](https://en.wikipedia.org/wiki/Linux_distribution#Installation-free_distributions_(live_CD/USB)). A Live distribution can be used without installing it. I bought the DVD on a computer fair for just a few euros. It is a desktop Linux distribution and was created by [Klaus Knopper](https://en.wikipedia.org/wiki/Klaus_Knopper). And to my surprise it is still developed today. It first saw daylight 21 years ago. I experienced some issues with installation on a machine back in the days, but the live DVD was fun to work with. It got me interested as an alternative to Microsoft Windows.
+
+Time passed after having trouble getting Knoppix running from my hard-drive properly. And I bumped upon [Ubuntu Linux 5.04](https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_5.04_(Hoary_Hedgehog)) a long time ago. I remember running Ubuntu on my desktop computer until [8.10](https://en.wikipedia.org/w/index.php?title=Ubuntu_version_history&action=edit&section=11). Things where very hairy at that time, closed source components where a pain to install (and will always be). It took me a few days during Christmas to get the Nvidia graphics card driver compiled for the Linux kernel Ubuntu was using. I had no clue what this fuzz was all about. But you need to install the kernel C headers and must make sure you are downloading the correct Nvidia installer. There must be one part a closed source binary blob and one part which compiles against your running kernel. The Nvidia drivers have been partially reverse engineered but didn't work that smooth to run a desktop properly.
+
+The Linux kernel is 'designed' in a way that every release can break things very badly. So upgrading your kernel means recompiling your closed source Nvidia driver every damn time. Or embedded systems stuck with an ancient vendor shipped buggy kernel. This is very annoying but you get used to it.
+
+I did extensive [distro hopping](https://distrowatch.com/) and have had experience with [Slackware](https://en.wikipedia.org/wiki/Slackware) which is a do it yourself (DIY) distribution and you need to be hardcore to compile and debug stuff on your own. Especially when you want [bleeding edge software](https://en.wikipedia.org/wiki/Bleeding_Edge). This was long before the stack-overflow generation, yes really i'm this old. We've got only mailing-list and the man pages back then. I had no desktop, just a window manager named [Fluxbox](https://en.wikipedia.org/wiki/Fluxbox). And also [Openbox](https://en.wikipedia.org/wiki/Openbox) which is a clean rewrite of Fluxbox in C++ instead of C. After being annoyed to use a mouse to control my windows I switched once again from 'desktop' software to a [tiling window manager](https://en.wikipedia.org/wiki/Tiling_window_manager) which is awesome IMHO so you have full control of your machine from your keyboard only. This was matrix-style computing, and even had my terminal sometimes configured with black or transparent background with green coloured text. I felt desktops where bloated and user unfriendly. [RSI](https://en.wikipedia.org/wiki/Repetitive_strain_injury) related issues are mostly due to incorrect mouse use, so I didn't suffered these problems. I felt when not using the mouse I AM the computer. Everything I could think of to control, just needed to use a hotkey and not touching the mouse for extended periods of time. You need real brainpower for this, because all those features behind hotkeys can get complicated. Just like flying an airplane with all those knobs and gauges.
+
+[Arch Linux](https://en.wikipedia.org/wiki/Arch_Linux) was a fairly new distribution which does only [rolling releases](https://en.wikipedia.org/wiki/Rolling_release) and never gives out a stable release. Except those who are distributed as installation media like CD/DVD/USB stick. It ships all software pre-compiled like kernels, libraries and applications. But it is only for power users. It can be run on desktop, server or embedded appliances. The [documentation is extensive and available in the form of a wiki](https://wiki.archlinux.org/) which is actively maintained by the community.
+
+In my opinion the Linux desktop is still not widely adopted and failing because the Linux ecosystem is constant in flux and scattered across different communities with very diverged ideas how things should be developed and work for end users. A desktop is a complex beast, and for getting complexity to work [API](https://en.wikipedia.org/wiki/API) and [ABI](https://en.wikipedia.org/wiki/Application_binary_interface) stability is a must.
+
+Linux desktop is a story on itself. But I try to explain it in a nutshell.
+
+In the open-source world everything is free but usable under the terms of a [open-ish license](https://choosealicense.com/). With so many people on the globe connected to the internet it is natural to have different ideas. They form communities around their own ideologies and get followers. The most dominating desktops today are still KDE and GNOME where GNOME suffered a major (community) split between version 2 and 3. This split was caused by version 2 a conventional desktop interface and version 3 a complete rethink of how a desktop could be used. It has a MacOS-like layout, so the idea is basically stolen in my opinion.
+
+The Linux distribution '[Elementary OS
+](https://en.wikipedia.org/wiki/Elementary_OS)' is worth mentioning as it looks and feels mimic macOS. And tries to stabilise APIs to build software against. But I have read somewhere the software build for Elementary is hard to run on other distributions.
+
+I'm an [Embedded Systems Engineer](https://en.wikipedia.org/wiki/Embedded_system) who has experience in building products using open-source components. I have love-hate relationship with open-source because most of the time documentation lags behind the actual released software. Or there is no documentation at all. Then 'the code is the documentation'. A product is only complete when the documentation is in sublime condition.
+
+![linux-logo](/images/a-tale-about-open-source-software-experience/FreeBSD_logo.png)
+
+But approximately two years ago the [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD) operating system got my attention again to use it on my own build and managed [NAS server](https://en.wikipedia.org/wiki/Network-attached_storage). Especially for the [ZFS filesystem](https://en.wikipedia.org/wiki/ZFS) features and OS stability. I don't look back to use Linux on my fileserver ever since. The [BTRFS filesystem](https://en.wikipedia.org/wiki/Btrfs) is worth mentioning as a Linux alternative to ZFS but it has its own odds compared to ZFS.
+
+The FreeBSD operating system has sublime documentation compared to the scattered Linux ecosystem. It ships with a [handbook](https://docs.freebsd.org/en/books/handbook/). Everything is managed on a central place, which is good so all users and developers know how to use and what expect from the operating system.
+
+On the desktop I strictly use macOS nowadays because I felt Linux desktop took me too much time to maintain and keep running after updates broke my configurations. The macOS desktop is rock-solid and never crashes, even CPU consuming tasks will not lag the snappiness of the desktop experience. Yes a MacBook or iMac has its price, but that price i'm willing to pay for simplicity of the macOS desktop and stability.
+
+Under the hood macOS uses BSD and closed source components and feels like a mix of (Free)BSD and Linux, so using this as a desktop I feel home. Also using other closed source software is recent years no problem at all. And Apple products are [well documented with the knowledge base](https://support.apple.com/). And if you want to use open-source software on macOS you probably need [Homebrew, the missing package manager](https://brew.sh/), and a good terminal like [iTerm2](https://iterm2.com/).
+
+Be open minded to try something unknown, get good at it and use what fits your needs.
+
+Parts of this blog post are based on writing from Wikipedia. So this post is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) which is the same as text on Wikipedia. The logos are copyrighted and i'm using the under the fair use terms. It is different compared to the rest of my blog which is license under [CC0 (public domain)](https://creativecommons.org/share-your-work/public-domain/). And I heavily rely on linking to Wikipedia for the curious reader.
