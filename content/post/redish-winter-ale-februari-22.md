@@ -1,6 +1,6 @@
 ---
 title: "Redish winter ale feb '22"
-date: 2022-02-19T12:00:00+01:00
+date: 2022-02-26
 tags: ["beer", "homebrew"]
 ---
 
@@ -53,4 +53,24 @@ Total malts 6,47 kg. With 820 gr speciality malts for color and flavor which is 
 
 # Pictures
 
-TBD
+
+![Recipe making and weighting](/images/redish-winter-ale-februari-22/recipe-making-and-weighting.jpg)
+
+![Malt milling](/images/redish-winter-ale-februari-22/malt-milling.jpg)
+
+![Mashing in the malts](/images/redish-winter-ale-februari-22/mashing-in.jpg)
+
+![Transfer of wort](/images/redish-winter-ale-februari-22/transfer-of-wort.jpg)
+
+![Wort syphoning](/images/redish-winter-ale-februari-22/wort-syphoning.jpg)
+
+![Wort syphoning almost finished](/images/redish-winter-ale-februari-22/wort-syphoning-almost-finished.jpg)
+
+![Multiple pans](/images/redish-winter-ale-februari-22/multiple-pans.jpg)
+
+![Hop boil](/images/redish-winter-ale-februari-22/hop-boil.jpg)
+
+![Wort chilling](/images/redish-winter-ale-februari-22/wort-chilling.jpg)
+
+![Fermenter result](/images/redish-winter-ale-februari-22/final-fermenter-result.jpg)
+
