@@ -4,7 +4,7 @@ date: 2021-11-26T09:59:59+01:00
 tags: ["beer", "homebrew"]
 ---
 
-The Apple Red Ale beer is a split from the [Autumn Dry Irish Red Ale](/post/autumn-dry-irish-red-ale/) . It includes 48% pasteurized apple juice I got from an apple tree of a collegue during the second fermentation. The batch size in the fermenter is 10,5 liters. And final bottles where 24x 33cl (7,92 liters).
+The Apple Red Ale beer is a split from the [Autumn Dry Irish Red Ale](/post/autumn-dry-irish-red-ale/) . It includes 48% pasteurized apple juice I got from an apple tree of a collegue during the second fermentation. The batch size in the fermenter is 10,5 liters. And final bottles where 24x 33cl (7,92 liters). The [Bottle ID is 311](/post/beer-cellar/).
 
 It was dryhopped with a few handfuls of old cascade flowers.
 

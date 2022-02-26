@@ -1,0 +1,56 @@
+---
+title: "Redish winter ale feb '22"
+date: 2022-02-19T12:00:00+01:00
+tags: ["beer", "homebrew"]
+---
+
+Attempt for a malty and sweet red ale low in alcohol.
+
+# Brewlog
+
+- [Bottle ID TBD](/post/beer-cellar/)
+- ABV 4.57% (75% efficiency)
+- IBU 24.99
+- EBC 18.31
+- Yeast: Fermentis Safale K-97, dry ale yeast. Sedimentation: slow, Attentuation: high. 
+- Fermentor target: 33 liter
+
+**Mash scheme**
+
+Single infusion mash with initial water temperature of 73 degree celsius. Mash at 66 degree for 90 minutes.
+Using the Brew-in-a-bag (BIAB) for filtering and brew-speed. BIAB works as a good filter so the mash will not
+cool significantly. I don't use a filtering bucket anymore because making a filter bed takes too much time to
+settle and the wort cools by 10-20 degrees during this step.
+
+I heated the wort to 78 degree and sparged spent grain with 80 degree water until running clear. Topped to 33
+liter during cooling.
+
+# Fermentables
+
+| Amount  | Ingredient                         | Color    |
+| ------- | ---------------------------------- | -------- |
+| 4 kg    | Pale ale                           | 7 EBC    |
+| 1,65 kg | Pilsner                            | 3 EBC    |
+| 200 gr  | CaraHell (Weyermann)               | 25 EBC   | 
+| 200 gr  | Abbey Malt (Weyermann)             | 43 EBC   |
+| 200 gr  | Flaked Oats                        | 4 EBC    |
+| 100 gr  | CaraRed (Weyermann)                | 50 EBC   |
+| 100 gr  | Pale Chocolate (Thomas Fawcett)    | 612 EBC  |
+| 20 gr   | Dark Chocolate                     | 1120 EBC |
+
+Total malts 6,47 kg. With 820 gr speciality malts for color and flavor which is 12,67% of the grain bill. Calculated as follows: special malts/(total/100).
+
+# Hops
+
+| Time   | Amount   | Variety                               | Alpha Acids |
+| ------ | -------- | ------------------------------------- | ----------- |
+| 50 min | 35gr     | Pilot UK (pressed flower)             | 9.93 AA     |
+| 50 min | ~10 gr   | Cascade (old hops)                    | 6.6 AA      |
+
+# Timing
+
+* **Brewed at**: 19 februari 2022
+
+# Pictures
+
+TBD
