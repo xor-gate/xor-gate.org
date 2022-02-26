@@ -1,12 +1,12 @@
 ---
-title: "Malty Ipa"
+title: "Malty IPA"
 date: 2021-01-10T18:29:54+01:00
 tags: ["beer", "homebrew"]
 ---
 
 # Brewlog
 
-- Bottle ID 101
+- [Bottle ID 101](/post/beer-cellar/)
 - ABV 7.13% (85% efficiency)
 - IBU 43.33
 
@@ -34,7 +34,7 @@ Brewed with the BIAB (brew in a bag) method single infusion 90 minute mash @ 66 
 
 # Dry hops
 
-Amarillo, Citra and homegrown
+Amarillo, Citra and homegrown. Amount just few handfulls.
 
 # Timing
 

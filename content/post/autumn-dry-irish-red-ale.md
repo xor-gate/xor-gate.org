@@ -4,13 +4,13 @@ date: 2021-11-26T09:59:59+01:00
 tags: ["beer", "homebrew"]
 ---
 
-Attempt for an extra dry red ale. First time I added 5% all-purpose white wheat flour to become hopefully a extra clear beer due to extra gluten. I split of an apple juice infused beer from this batch [Apple Red Ale](/post/apple-red-ale)
+Attempt for an extra dry red ale. First time I added 5% all-purpose white wheat flour to become hopefully a extra clear beer due to extra gluten. I split of an apple juice infused beer from this batch [Apple Red Ale](/post/apple-red-ale).
 
 ![after-first-fermentation](/images/autumn-dry-irish-red-ale/after-first-fermentation.jpg)
 
 # Brewlog
 
-- Bottle ID 211
+- [Bottle ID 211](/post/beer-cellar/)
 - ABV 4.8% (78% efficiency)
 - IBU 26.1
 - EBC 17.1
@@ -41,6 +41,8 @@ I mashed-in with enough water so I could add boiling water for the other steps. 
 | 300 g  | Dark crystal malt (Thomas Fawcett) | 320 EBC |
 | 250 g  | Biscuit                            | 50 EBC  |
 | 325 g  | White wheat flour                  | -       |
+
+Total 6,875 kg malts. With 550 gr speciality malts which is 8% of the grain bill.
 
 60 gram [priming](https://www.brewersfriend.com/beer-priming-calculator/) table sugar (for 1,6 volume of CO2) at bottle time
 

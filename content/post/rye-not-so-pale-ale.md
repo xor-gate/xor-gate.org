@@ -7,7 +7,7 @@ tags: ["beer", "homebrew"]
 
 # Brewlog
 
-- Bottle ID 104
+- [Bottle ID 104](/post/beer-cellar/)
 - ABV 7.51% (85% efficiency)
 - IBU 40.59 (only calculated for boiled hops)
 - EBC 20.36
@@ -48,60 +48,60 @@ Unweighted mix of Amarillo, Citra and Cascade. Dry hopped for an approximate tim
 
 ![](/images/rye-not-so-pale-ale/IMG_1402.JPG)
 
-Mix of grains
+*Mix of grains*
 
 ![](/images/rye-not-so-pale-ale/IMG_1405.JPG)
 
-Milling the grains
+*Milling the grains*
 
 ![](/images/rye-not-so-pale-ale/IMG_1408.JPG)
 
-Transfering hot tap water with a solar water pump (approximate 60 degree celsius)
+*Transfering hot tap water with a solar water pump (approximate 60 degree celsius)*
 
 ![](/images/rye-not-so-pale-ale/IMG_1411.JPG)
 
-Mashing the grains with the BIAB
+*Mashing the grains with the BIAB*
 
 ![](/images/rye-not-so-pale-ale/IMG_1415.JPG)
 
-Mashing foam
+*Mashing foam*
 
 ![](/images/rye-not-so-pale-ale/IMG_1416.JPG)
 
-Single infusion wait time, covered the kettle with insulation so the temperature will not drop
+*Single infusion wait time, covered the kettle with insulation so the temperature will not drop*
 
 ![](/images/rye-not-so-pale-ale/IMG_1419.JPG)
 
-Boiling the wort together with the hops
+*Boiling the wort with the hops*
 
 ![](/images/rye-not-so-pale-ale/IMG_1422.JPG)
 
-Unboiled malt water result with a complex taste
+*Unboiled malt water result with a complex taste*
 
 ![](/images/rye-not-so-pale-ale/IMG_1424.JPG)
 
-Final result in the fermentor
+*Final result in the fermentor*
 
 ![](/images/rye-not-so-pale-ale/IMG_1511.JPG)
 
-Floating dry hops with some white yeast/bacteria layer on top
+*Floating dry hops with some white yeast/bacteria layer on top*
 
 ![](/images/rye-not-so-pale-ale/IMG_1513.JPG)
 
-Filtering the floating hops out of the secondary fermentation
+*Filtering the floating hops out of the secondary fermentation*
 
 ![](/images/rye-not-so-pale-ale/IMG_1514.JPG)
 
-Resulting beer color after transfering to the bottling pan with added bottle prime sugar water
+*Resulting beer color after transfering to the bottling pan with added bottle prime sugar water*
 
 ![](/images/rye-not-so-pale-ale/IMG_1516.JPG)
 
-Result before fermenting in the bottle (without foam)
+*Result before fermenting in the bottle (without foam)*
 
 ![](/images/rye-not-so-pale-ale/IMG_1517.JPG)
 
-Dry hop bottom dirt in the secondary fermentor
+*Dry hop bottom dirt in the secondary fermentor*
 
 ![](/images/rye-not-so-pale-ale/IMG_1518.JPG)
 
-Final bottle result almost 3 crates of 330ml bottles.
+*Final bottle result almost 3 crates of 330ml bottles.*
