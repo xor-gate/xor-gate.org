@@ -15,7 +15,7 @@ They are sorted from new to old.
 
 | Bottle ID | Beer                                                              | Bottled at |
 | --------- | ----------------------------------------------------------------- | ---------- |
-| 183       | [Redish winter ale feb '22](/post/redish-winter-ale-feb-22/) | 2022-03-18 |
+| 183       | [Redish winter ale feb '22](/post/redish-winter-ale-februari-22/) | 2022-03-18 |
 | 311       | [Apple Red Ale](/post/apple-red-ale/)                             | 2021-11-25 |
 | 211       | [Autumn Dry Irish Red Ale](/post/autumn-dry-irish-red-ale/)       | 2021-11-25 |
 | 104       | [Rye not so pale ale](/post/rye-not-so-pale-ale)                  | 2021-04-10 |
