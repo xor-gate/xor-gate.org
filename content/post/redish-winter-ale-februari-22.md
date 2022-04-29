@@ -1,14 +1,14 @@
 ---
 title: "Redish winter ale feb '22"
-date: 2022-02-26
+date: 2022-04-29
 tags: ["beer", "homebrew"]
 ---
 
-Attempt for a malty and sweet red ale low in alcohol.
+Attempt for a malty and sweet [irish red ale](https://learn.kegerator.com/irish-red-ale/) low in alcohol. The beer came out a little less red then expected but is probably due too the chocolate malts. The red color oxidized fast till amber/brown. The taste came out smooth and malty, luckily the bottle fermentation didn't produce much carbonation.
 
 # Brewlog
 
-- [Bottle ID TBD](/post/beer-cellar/)
+- [Bottle ID 183](/post/beer-cellar/)
 - ABV 4.57% (75% efficiency)
 - IBU 24.99
 - EBC 18.31
@@ -40,6 +40,8 @@ liter during cooling.
 
 Total malts 6,47 kg. With 820 gr speciality malts for color and flavor which is 12,67% of the grain bill. Calculated as follows: special malts/(total/100).
 
+Bottle prime sugar approximate 70 grams.
+
 # Hops
 
 | Time   | Amount   | Variety                               | Alpha Acids |
@@ -47,12 +49,15 @@ Total malts 6,47 kg. With 820 gr speciality malts for color and flavor which is 
 | 50 min | 35gr     | Pilot UK (pressed flower)             | 9.93 AA     |
 | 50 min | ~10 gr   | Cascade (old hops)                    | 6.6 AA      |
 
+Dry hopped afterwards with a few handfulls for approximate 2 weeks.
+
 # Timing
 
 * **Brewed at**: 19 februari 2022
+* **Second fermentation and dryhop**: Not registered 
+* **Bottled at**: 18 march 2022
 
 # Pictures
-
 
 ![Recipe making and weighting](/images/redish-winter-ale-februari-22/recipe-making-and-weighting.jpg)
 
@@ -73,4 +78,6 @@ Total malts 6,47 kg. With 820 gr speciality malts for color and flavor which is 
 ![Wort chilling](/images/redish-winter-ale-februari-22/wort-chilling.jpg)
 
 ![Fermenter result](/images/redish-winter-ale-februari-22/final-fermenter-result.jpg)
+
+![Final result](/images/redish-winter-ale-februari-22/final-result.jpg)
 
