@@ -1,6 +1,6 @@
 ---
 title: "Grow and go box prototype"
-date: 2022-02-26
+date: 2022-04-30
 tags: ["gardening"]
 ---
 
@@ -32,28 +32,58 @@ I control the grow box humidity by leaving the lid with a small airgap by moving
 ## Images
 
 **Led panel taped on cardboard with fan**
+
 ![Led panel on cardboard with fan](/images/grow-and-go-box-proto/led_panel_cardboard_fan.jpg)
 
-**Growbox closed with cat**
+**Growbox closed with [Nero](https://www.instagram.com/nero.the.cat.2021/) inspecting**
 ![Growbox closed with cat](/images/grow-and-go-box-proto/growbox-closed-cat.jpg)
 
 **Philips Hue smartplug as timer**
+
 ![Philips hue smartplug timer](/images/grow-and-go-box-proto/philips-hue-smartplug.jpg)
 
 **Petri dishes on heatmat**
+
 ![Petri dishes heatmat](/images/grow-and-go-box-proto/petri-dishes-heatmat.jpg)
 
 **Petri dish sprouts**
+
 ![Petri dishes sprouts](/images/grow-and-go-box-proto/petri-dishes-sprouted.jpg)
 
 **Planting the seedlings in a tray at 30 januari**
+
 ![Planting plugs at 30 januari](/images/grow-and-go-box-proto/planting-plugs_30_01_2022.jpg)
 
 **Growbox light at 5 februari**
+
 ![Growbox light 5 februari](/images/grow-and-go-box-proto/growbox-light_05_02_2022.jpg)
 
 **Planting plugs at 19 februari**
+
 ![Planting plugs with small pepper plants 19 februari](/images/grow-and-go-box-proto/planting-plugs_19_02_2022.jpg)
 
 **Planting plugs at 26 februari**
+
 ![Planting plugs with small pepper plants 26 februari](/images/grow-and-go-box-proto/planting-plugs_26_02_2022.jpg)
+
+**Transplanting seedlings at 16 march**
+
+![Rooted seedling](/images/grow-and-go-box-proto/transplanting-seedlings_16-03-2022.jpg)
+
+![Tray of seedlings](/images/grow-and-go-box-proto/transplanting-seedlings_01_16-03-2022.jpg)
+
+![Potting seedlings](/images/grow-and-go-box-proto/transplanting-seedlings_02_16-03-2022.jpg)
+
+![Potted seedlings](/images/grow-and-go-box-proto/transplanting-seedlings_03_16-03-2022.jpg)
+
+**Growing progress 8 april**
+
+![Growing progress 8 april](/images/grow-and-go-box-proto/growing_progress_8-04-2022.jpg)
+
+**Growing progress 21 april**
+
+![Growing progress 21 april](/images/grow-and-go-box-proto/growing_progress_21-04-2022.jpg)
+
+**Grow light 27 april**
+
+![Growing progress 27 april](/images/grow-and-go-box-proto/grow_light_27-04-2022.jpg)
