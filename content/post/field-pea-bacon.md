@@ -1,6 +1,7 @@
 ---
 title: "Field Pea & Bacon recipe"
 date: 2020-04-15
+tags: ["gardening", "recipes", "food"]
 ---
 
 So I harvested some awesome vegetables and need to hack a recipe together? So I came up with:

@@ -23,12 +23,17 @@ Self build low-power file/download server
 
 ### Specifications
 
-* Mainboard Supermicro A1SAM-2550F
+* Mainboard Supermicro [A1SAM-2550F](https://www.supermicro.com/products/motherboard/Atom/X10/A1SAM-2550F.cfm)
 * 16GB DDR3 non-ECC (4x 4GB)
 * 128GB SSD for the FreeBSD operating system
 * 2TB WD Red HDD for data
 * 4x Gigabit LAN
 * 1x Management ethernet interface (Supermicro IPMI iKVM)
+
+### TODO ZFS pool
+
+* <https://wintelguy.com/zfs-calc.pl>
+* <https://blog.programster.org/zfs-create-disk-pools>
 
 ### Console output
 
