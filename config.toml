@@ -46,19 +46,24 @@ defaultContentLanguage = "en"           # Default language to use
 
 [[menu.main]]
   name = "Posts"
-  weight = 20
+  weight = 10
   identifier = "post"
   url = "/post/"
 [[menu.main]]
-  name = "Tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
   name = "About"
-  weight = 50
+  weight = 20
   identifier = "about"
   url = "/about"
+[[menu.main]]
+  name = "Pyrotechnics"
+  weight = 30
+  identifier = "pyrotechnics"
+  url = "/pyrotechnics"
+[[menu.main]]
+  name = "Tags"
+  weight = 40
+  identifier = "tags"
+  url = "/tags/"
 
 [params]
   debug = false # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
