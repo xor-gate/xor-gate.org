@@ -36,7 +36,7 @@ tags: ["beer", "homebrew"]
 | 425 g      | Carahell (Weijermann)              | 30 EBC  |
 | 350 g      | Rolled oats                        | 4 EBC   |
 
-Total 7,14 kg malts. With 550 gr speciality malts which is 8% of the grain bill.
+Total 7,14 kg malts. With 1425 gr speciality malts which is 20% of the grain bill (this excludes the 350gr rolled oats).
 
 # Hops
 
