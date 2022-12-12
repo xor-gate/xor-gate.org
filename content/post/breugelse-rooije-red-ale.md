@@ -47,7 +47,9 @@ Total 7,14 kg malts. With 1425 gr speciality malts which is 20% of the grain bil
 # Timing
 
 * **Brewed at**: 4 December 2022
+* **First syphon at**: 12 December 2022
+* **Cold crash (outside) at**: 12 December 2022
 
 # Pictures
 
-TBD
+No pictures yet
