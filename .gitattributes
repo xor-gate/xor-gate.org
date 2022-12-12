@@ -89,3 +89,5 @@
 /static/images/overwintering-pepper-2022-experiment/serano-pepper.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/overwintering-pepper-2022-experiment/tray-plastic-liner.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/overwintering-pepper-2022-experiment/trimmed-pepper-garden.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/fruity-double-red-and-beer-n-grapes-beer-speriment/IMG_4207.HEIC filter=lfs diff=lfs merge=lfs -text
+/static/images/fruity-double-red-and-beer-n-grapes-beer-speriment/ferment-just-started-layer-sep.jpg filter=lfs diff=lfs merge=lfs -text
