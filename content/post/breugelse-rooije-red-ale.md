@@ -6,7 +6,7 @@ tags: ["beer", "homebrew"]
 
 # Brewlog
 
-- [Bottle ID TBD](/post/beer-cellar/)
+- [Bottle ID 312](/post/beer-cellar/)
 - ABV 5.2% (80% efficiency)
 - IBU 25.75
 - EBC 25.75
@@ -52,4 +52,22 @@ Total 7,14 kg malts. With 1425 gr speciality malts which is 20% of the grain bil
 
 # Pictures
 
-No pictures yet
+![beer-before-bottle](/images/breugelse-rooije-red-ale/beer-before-bottle.jpeg)
+
+![bottle-id-312](/images/breugelse-rooije-red-ale/bottle-id-312.jpeg)
+
+![empty-bottles](/images/breugelse-rooije-red-ale/empty-bottles.jpeg)
+
+![last-siphon](/images/breugelse-rooije-red-ale/last-siphon.jpeg)
+
+![first-ferment-beer-color](/images/breugelse-rooije-red-ale/first-ferment-beer-color.jpeg)
+
+![first-ferment-beer-trub](/images/breugelse-rooije-red-ale/first-ferment-beer-trub.jpeg)
+
+![first-ferment-foam](/images/breugelse-rooije-red-ale/first-ferment-foam.jpeg)
+
+![first-ferment-siphon](/images/breugelse-rooije-red-ale/first-ferment-siphon.jpeg)
+
+![first-ferment-vessels](/images/breugelse-rooije-red-ale/first-ferment-vessels.jpeg)
+
+![siphon-beer-color](/images/breugelse-rooije-red-ale/siphon-beer-color.jpeg)

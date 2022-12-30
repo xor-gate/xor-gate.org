@@ -29,3 +29,19 @@ Juice amount: 1600 ml
               -----------
        Total: 3.375 liter
 ```
+
+# Pictures
+
+![grape-ferment-gone-wrong](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/grape-ferment-gone-wrong.jpg)
+
+![juice-pouring](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/juice-pouring.jpeg)
+
+![juice-without-beer](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/juice-without-beer.jpeg)
+
+![red-currant-defrost-pan](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/red-currant-defrost-pan.jpeg)
+
+![red-currant-defrost](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/red-currant-defrost.jpeg)
+
+![red-currant-pasteurize](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/red-currant-pasteurize.jpeg)
+
+![red-currant-sieve](/images/fruity-double-red-and-beer-n-grapes-beer-speriment/red-currant-sieve.jpeg)
