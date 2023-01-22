@@ -1,21 +1,14 @@
-// The main package is where the main function always resides
 package main
 
 // The import statement is used to import packages
 //  imports from third party sources are always URLs
 //  so you know where they are from
-import (
-	"bufio"
-	"fmt"
-	"io"
-	"net"
-	"log"
-	"os"
-	"time"
-)
+//---
+// EXERCISE 1: must import the packages which are used throughout the code
+//---
 
 var hostPort = "127.0.0.1:9001" // IoT device TCP server address
-const clientsToStart = 16 // Amount of fake clients to spawn
+const clientsToStart = 16       // Amount of fake clients to spawn
 const clientStartWaitTime = 1 * time.Millisecond
 
 // The main function where a little magic happens
@@ -26,7 +19,10 @@ func main() {
 	clientsDisconnectChannel := make(chan string, clientsToStart)
 
 	// Run the server on its own goroutine (thread)
-	go server_listen_and_serve()
+	//---
+	// EXERCISE 2: Run the TCP server "in the background" with a goroutine
+	//---
+	server_listen_and_serve()
 
 	// Because the server is started asynchronous we don't know when we are
 	//  ready to accept client connections. For now we sleep a little. In
@@ -35,12 +31,15 @@ func main() {
 
 	// Start the amount of clientsToStart
 	for {
-		go client(clientID, clientsDisconnectChannel) // spawn client
-		time.Sleep(clientStartWaitTime) // sleep fixed time for spawning next client
+		//---
+		// EXERCISE 2: Run the TCP client "in the background" with a goroutine
+		//---
+		client(clientID, clientsDisconnectChannel) // spawn client
+		time.Sleep(clientStartWaitTime)               // sleep fixed time for spawning next client
 
 		// Generate next client ID
 		clientID++
-		if (clientID > clientsToStart) {
+		if clientID > clientsToStart {
 			log.Println("All clients are started in parallel!")
 			allClientsStarted = true
 			break
@@ -49,25 +48,32 @@ func main() {
 
 	// When all clients are spawned in parallel wait for them to get the
 	//  disconnect message from the server
-	if (allClientsStarted) {
-		var clientsDisconnected = 0
-		var done bool
-		for done {
+	if allClientsStarted {
+		var clientsDisconnected = 0     // Count the amount of clients disconnected
+		var allClientsDisconnected bool // We are done when all clients signaled and disconnected
+
+		for {
 			select {
-			case clientDisconnectMsg := <- clientsDisconnectChannel:
+			case <-time.After(5 * time.Second):
+				panic("[GAME OVER] Clients not disconnected within 5 seconds!")
+			case clientDisconnectMsg := <-clientsDisconnectChannel:
 				log.Println(clientDisconnectMsg)
 				clientsDisconnected++
-				if (clientsDisconnected > clientsToStart) {
-					done = true
+				if clientsDisconnected == clientsToStart-1 {
+					allClientsDisconnected = true
 					break
 				}
+			}
+
+			if allClientsDisconnected {
+				break
 			}
 		}
 	} else {
 		log.Println("Client sync lost")
 	}
 
-	log.Println("All", clientsToStart, "clients disconnected")
+	log.Println("[LEVEL COMPLETED!] All", clientsToStart, "TCP clients disconnected")
 }
 
 // TCP client implementation
@@ -86,6 +92,7 @@ func client(clientID uint, disconnectChannel chan string) {
 	// Read response from server
 	response := bufio.NewReader(conn)
 	for {
+		// Send to the server a hello message with the clientID
 		switch err {
 		case nil:
 			conn.Write([]byte(fmt.Sprintf("[client] id=%u", clientID)))
@@ -96,62 +103,72 @@ func client(clientID uint, disconnectChannel chan string) {
 
 		}
 
+		// Read a message from the server (newline delimited)
 		responseData, err := response.ReadBytes(byte('\n'))
 		switch err {
 		case nil:
 			responseString := string(responseData)
 			switch responseString {
-			case "DISCONNECT":
-				disconnectChannel <- fmt.Sprintf("[client] id=%d got \"", responseString, "\" msg from server", clientID)
+			case "DISCONNECT\n":
+				// Notify the main goroutine the client connection was ok, and is disconnected
+				disconnectChannel <- fmt.Sprintf("[client] id=%d got \"%s\" msg from server", clientID, strings.TrimSpace(responseString))
+				conn.Close() // Close the client side connection
+				return
 			}
 		case io.EOF:
+			log.Printf("Server closed connect for client id=%d\n", clientID)
 			os.Exit(0)
 		default:
-			fmt.Println("ERROR", err)
+			fmt.Println("[client] ERROR", err)
 			os.Exit(2)
 		}
 	}
 }
 
 // This is the command and control server for a single client
-//  the conn parameter is the connection to the client
+//
+//	the conn parameter is the connection to the client
+//
 // As this function is blocking it must be executed from a goroutine
 func serve_single_client(conn net.Conn) {
-	log.Println("[server] Client connected")
+	log.Println("[server] TCP client connected")
+	defer conn.Close() // When the client has been served, at end of the function the connection is closed
 
 	r := bufio.NewReader(conn)
 	for {
+		// Receive a "hello" message from the client (every message ends with a newline)
 		data, err := r.ReadBytes(byte('\n'))
 		switch err {
 		case nil:
 			break
 		case io.EOF:
 		default:
-			fmt.Println("ERROR", err) // Something went wrong while reading from the server e.g disconnect
+			fmt.Println("[server] ERROR", err) // Something went wrong while reading from the server e.g disconnect
 			return
 		}
 
 		msg := string(data)
 		log.Println("[server] Received client message:", msg)
 
-		// Ask the client to disconnect
-		conn.Write([]byte("DISCONNECT"))
-	}
+		// Ask the client to disconnect, then we are done
+		//---
+		// EXERCISE 3: Send the disconnect message to the TCP client on "conn"
+		//---		
 
-	// Wait some time to flush the connection buffer and close the client TCP connection
-	time.Sleep(time.Second)
-	conn.Close()
+		time.Sleep(10 * time.Second)
+		break
+	}
 }
 
 func server_listen_and_serve() {
-	// Start a TCP server
+	// Start a TCP server on hostPort URI
 	l, err := net.Listen("tcp", hostPort)
 	if err != nil {
 		fmt.Println("[server] ERROR while started to listen on", hostPort, "error:", err)
 		os.Exit(1)
 	}
 
-	fmt.Println("[server] Waiting for TCP clients at tcp://", hostPort)
+	fmt.Println("[server] Waiting for TCP clients to connect at", hostPort)
 
 	for {
 		conn, err := l.Accept() // Wait for connection of a client
@@ -161,7 +178,7 @@ func server_listen_and_serve() {
 		}
 
 		// Serve a single client on its own goroutine
-		go serve_single_client(conn) 
+		go serve_single_client(conn)
 	}
 }
 
