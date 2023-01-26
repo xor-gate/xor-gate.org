@@ -9,13 +9,10 @@ package main
 
 var hostPort = "127.0.0.1:9001" // IoT device TCP server address
 const clientsToStart = 16       // Amount of fake clients to spawn
-const clientStartWaitTime = 1 * time.Millisecond
 
 // The main function where a little magic happens
 func main() {
 	var clientID uint = 1
-	var allClientsStarted bool
-
 	clientsDisconnectChannel := make(chan string, clientsToStart)
 
 	// Run the server on its own goroutine (thread)
@@ -27,50 +24,44 @@ func main() {
 	// Because the server is started asynchronous we don't know when we are
 	//  ready to accept client connections. For now we sleep a little. In
 	//  real life the server is started before the clients connect
-	time.Sleep(3 * time.Second)
+	time.Sleep(time.Second)
 
-	// Start the amount of clientsToStart
+	// Start the amount of TCP clientsToStart
 	for {
 		//---
 		// EXERCISE 2: Run the TCP client "in the background" with a goroutine
 		//---
 		client(clientID, clientsDisconnectChannel) // spawn client
-		time.Sleep(clientStartWaitTime)               // sleep fixed time for spawning next client
 
 		// Generate next client ID
 		clientID++
 		if clientID > clientsToStart {
 			log.Println("All clients are started in parallel!")
-			allClientsStarted = true
 			break
 		}
 	}
 
 	// When all clients are spawned in parallel wait for them to get the
 	//  disconnect message from the server
-	if allClientsStarted {
-		var clientsDisconnected = 0     // Count the amount of clients disconnected
-		var allClientsDisconnected bool // We are done when all clients signaled and disconnected
+	var clientsDisconnected = 0     // Count the amount of clients disconnected
+	var allClientsDisconnected bool // We are done when all clients signaled and disconnected
 
-		for {
-			select {
-			case <-time.After(5 * time.Second):
-				panic("[GAME OVER] Clients not disconnected within 5 seconds!")
-			case clientDisconnectMsg := <-clientsDisconnectChannel:
-				log.Println(clientDisconnectMsg)
-				clientsDisconnected++
-				if clientsDisconnected == clientsToStart-1 {
-					allClientsDisconnected = true
-					break
-				}
-			}
-
-			if allClientsDisconnected {
+	for {
+		select {
+		case <-time.After(5 * time.Second):
+			panic("[GAME OVER] All clients not disconnected within 5 seconds!")
+		case clientDisconnectMsg := <-clientsDisconnectChannel:
+			log.Println(clientDisconnectMsg)
+			clientsDisconnected++
+			if clientsDisconnected == clientsToStart-1 {
+				allClientsDisconnected = true
 				break
 			}
 		}
-	} else {
-		log.Println("Client sync lost")
+
+		if allClientsDisconnected {
+			break
+		}
 	}
 
 	log.Println("[LEVEL COMPLETED!] All", clientsToStart, "TCP clients disconnected")
@@ -153,7 +144,9 @@ func serve_single_client(conn net.Conn) {
 		// Ask the client to disconnect, then we are done
 		//---
 		// EXERCISE 3: Send the disconnect message to the TCP client on "conn"
-		//---		
+		//---
+
+		//--- ^^ insert code above ^^
 
 		time.Sleep(10 * time.Second)
 		break
