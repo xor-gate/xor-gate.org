@@ -6,6 +6,7 @@ package main
 //---
 // EXERCISE 1: must import the packages which are used throughout the code
 //---
+import "io"
 
 var hostPort = "127.0.0.1:9001" // IoT device TCP server address
 const clientsToStart = 16       // Amount of fake clients to spawn
