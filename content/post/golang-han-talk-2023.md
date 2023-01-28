@@ -10,7 +10,7 @@ On 27 Januari I did give a guest lecture and workshop at the [HAN Univerity of A
 
 * The slides: [golang-han-talk-2023-slides.pdf](/talks/golang-han-2023/golang-han-talk-2023-slides.pdf)
 * The exercise manual: [golang-han-talk-2023-hands-on-workshop-manual.pdf](/talks/golang-han-2023/golang-han-talk-2023-hands-on-workshop-manual.pdf)
-* The solution: [final_solution.go](/talks/golang-han-2023/final_solution.go)
+* The solution: [final_solution.go](https://github.com/xor-gate/xor-gate.org/blob/master/static/talks/golang-han-2023/final_solution.go)
 
 
 
