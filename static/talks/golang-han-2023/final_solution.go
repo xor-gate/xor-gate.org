@@ -1,3 +1,8 @@
+// Golang HAN 2023 talk hands-on workshop exercise
+//  good luck with hacking to make it work again!
+
+// See also: https://xor-gate.org/talks/golang-han-2023/
+
 package main
 
 // The import statement is used to import packages
@@ -24,7 +29,6 @@ const clientStartWaitTime = 1 * time.Millisecond
 // The main function where a little magic happens
 func main() {
 	var clientID uint = 1
-	var allClientsStarted bool
 
 	clientsDisconnectChannel := make(chan string, clientsToStart)
 
@@ -39,48 +43,41 @@ func main() {
 	//  real life the server is started before the clients connect
 	time.Sleep(3 * time.Second)
 
-	// Start the amount of clientsToStart
+	// Start the amount of clientsToStart in parallel
 	for {
 		//---
 		// EXERCISE 2: Run the TCP client "in the background" with a goroutine
 		//---
 		go client(clientID, clientsDisconnectChannel) // spawn client
-		time.Sleep(clientStartWaitTime)               // sleep fixed time for spawning next client
 
 		// Generate next client ID
 		clientID++
 		if clientID > clientsToStart {
 			log.Println("All clients are started in parallel!")
-			allClientsStarted = true
 			break
 		}
 	}
 
 	// When all clients are spawned in parallel wait for them to get the
 	//  disconnect message from the server
-	if allClientsStarted {
-		var clientsDisconnected = 0     // Count the amount of clients disconnected
-		var allClientsDisconnected bool // We are done when all clients signaled and disconnected
+	var clientsDisconnected = 0     // Count the amount of clients disconnected
+	var allClientsDisconnected bool // We are done when all clients signaled and disconnected
 
-		for {
-			select {
-			case <-time.After(5 * time.Second):
-				panic("[GAME OVER] Clients not disconnected within 5 seconds!")
-			case clientDisconnectMsg := <-clientsDisconnectChannel:
-				log.Println(clientDisconnectMsg)
-				clientsDisconnected++
-				if clientsDisconnected == clientsToStart-1 {
-					allClientsDisconnected = true
-					break
-				}
-			}
-
-			if allClientsDisconnected {
-				break
+	for {
+		select {
+		case <-time.After(5 * time.Second):
+			panic("[GAME OVER] Clients not disconnected within 5 seconds!")
+		case clientDisconnectMsg := <-clientsDisconnectChannel:
+			log.Println(clientDisconnectMsg)
+			clientsDisconnected++
+			if clientsDisconnected == clientsToStart-1 {
+				allClientsDisconnected = true
 			}
 		}
-	} else {
-		log.Println("Client sync lost")
+
+		if allClientsDisconnected {
+			break
+		}
 	}
 
 	log.Println("[LEVEL COMPLETED!] All", clientsToStart, "TCP clients disconnected")
