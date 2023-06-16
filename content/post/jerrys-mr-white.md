@@ -26,7 +26,7 @@ For the Jerry's Mr White the following ingredients are added:
 |-------------|---------------------------|
 | 200 gr      | Raw local honey           |
 | 1 pcs       | Lemon  juiced             |
-| 75 grams    | Amarillo hops (dryhop)    |
+| 75 grams    | Amarillo hops (as dryhop with 9% Alpha Acids)    |
 | 105 ml      | Smokey Scott Whisky (40%) |
 
 # Schedule
