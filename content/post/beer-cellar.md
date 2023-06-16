@@ -1,6 +1,6 @@
 ---
 title: "Beer Cellar"
-date: 2023-05-29
+date: 2023-06-16
 tags: ["beer", "homebrew"]
 ---
 
@@ -13,12 +13,14 @@ This post keeps a list of beers I have brewed with bottle numbers and links to t
 
 They are sorted from new to old.
 
-| Bottle ID | Beer                                                              | Bottled at |
-| --------- | ----------------------------------------------------------------- | ---------- |
-| TBD       | [Jerry's Mr White](/post/jerrys-mr-white/)                        | TBD        |
-| 312       | [Breugelse rooije red ale](/post/breugelse-rooije-red-ale/)       | 2022-12-30 |
-| 183       | [Redish winter ale feb '22](/post/redish-winter-ale-februari-22/) | 2022-03-18 |
-| 311       | [Apple Red Ale](/post/apple-red-ale/)                             | 2021-11-25 |
-| 211       | [Autumn Dry Irish Red Ale](/post/autumn-dry-irish-red-ale/)       | 2021-11-25 |
-| 104       | [Rye not so pale ale](/post/rye-not-so-pale-ale)                  | 2021-04-10 |
-| 101       | [Malty Ipa](/post/malty-ipa/)                                     | 2021-01-10 |
+| Bottle ID | Beer                                                                           | Bottled at |
+| --------- | ------------------------------------------------------------------------------ | ---------- |
+| TBD       | [Jerry's Mr White](/post/jerrys-mr-white/)                                     | TBD        |
+| 176       | [Beer-n-grapes](/post/fruity-double-red-and-beer-n-grapes-beer-speriment/)     | 2023-06-16 |
+| 166       | [Double red fruity](/post/fruity-double-red-and-beer-n-grapes-beer-speriment/) | 2023-06-16 |
+| 312       | [Breugelse rooije red ale](/post/breugelse-rooije-red-ale/)                    | 2022-12-30 |
+| 183       | [Redish winter ale feb '22](/post/redish-winter-ale-februari-22/)              | 2022-03-18 |
+| 311       | [Apple Red Ale](/post/apple-red-ale/)                                          | 2021-11-25 |
+| 211       | [Autumn Dry Irish Red Ale](/post/autumn-dry-irish-red-ale/)                    | 2021-11-25 |
+| 104       | [Rye not so pale ale](/post/rye-not-so-pale-ale)                               | 2021-04-10 |
+| 101       | [Malty Ipa](/post/malty-ipa/)                                                  | 2021-01-10 |
