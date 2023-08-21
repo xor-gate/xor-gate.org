@@ -1,3 +1,5 @@
+all: watch
+
 deploy:
 	$(MAKE) prod-deploy
 prod:
