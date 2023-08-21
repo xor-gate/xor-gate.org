@@ -1,12 +1,14 @@
 ---
 title: "Jerry's Mr White"
-date: 2023-06-16
+date: 2023-08-21
 tags: ["beer", "homebrew"]
 ---
 
 The base of this brew is a Brewferm Mr White brew kit for ["witbier"](https://en.wiktionary.org/wiki/witbier) a top-fermented barley/wheat beer brewed mainly in Belgium and the Netherlands. It is a kit for 20 liters, and was split into two ~9.5 liter wort batches in the fermenter.
 
 We measured around [10 brix](https://www.brewersfriend.com/brix-converter/) of the 20 liters which is 5.2% ABV. The kit stated it was around 5.5% ABV. So the brew was not bad. Also the bottle prime sugar for carbonation adds a little alcohol to the end product.
+
+The [bottle ID is 277](/post/beer-cellar).
 
 # Ingredients
 
@@ -33,6 +35,7 @@ For the Jerry's Mr White the following ingredients are added:
 
 - 29 May 2023: Brewed 
 - 16 June 2023: First siphon and ferment with honey, dry hop & whisky
+- 17 Juli 2023: Bottled
 
 # Pictures
 

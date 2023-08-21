@@ -1,6 +1,6 @@
 ---
 title: "Beer Cellar"
-date: 2023-06-16
+date: 2023-08-21
 tags: ["beer", "homebrew"]
 ---
 
@@ -15,7 +15,7 @@ They are sorted from new to old.
 
 | Bottle ID | Beer                                                                           | Bottled at |
 | --------- | ------------------------------------------------------------------------------ | ---------- |
-| TBD       | [Jerry's Mr White](/post/jerrys-mr-white/)                                     | TBD        |
+| 277       | [Jerry's Mr White](/post/jerrys-mr-white/)                                     | 2023-07-17 |
 | 176       | [Beer-n-grapes](/post/fruity-double-red-and-beer-n-grapes-beer-speriment/)     | 2023-06-16 |
 | 166       | [Double red fruity](/post/fruity-double-red-and-beer-n-grapes-beer-speriment/) | 2023-06-16 |
 | 312       | [Breugelse rooije red ale](/post/breugelse-rooije-red-ale/)                    | 2022-12-30 |
