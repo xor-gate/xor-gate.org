@@ -30,6 +30,8 @@ scanned 1 barcode symbols from 1 images in 0,03 seconds
 
 As you can see the [QR-code](https://en.wikipedia.org/wiki/QR_code) contains a special formatted URL. Where most important `key=value` is `secret=XXX`. This secret must be inserted in you [MacPass/KeePass XC OTP secret field](https://keepassxc.org/docs/KeePassXC_UserGuide#_adding_totp_to_an_entry). This `otpauth` protocol URL specification is [not well standarized](https://shkspr.mobi/blog/2022/05/why-is-there-no-formal-specification-for-otpauth-urls/). See also [`github.com/google/google-authenticator` wiki Key Uri Format](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)
 
+For the security researchers among us, making a physical copy of the TOTP-secret can also be a security hole. But I encrypt the QR-code images in my Keepass database. Or print them out on paper. When losing it, you can lose your account! A potential security problem is far worse than out-locking yourself from your most important accounts. Choose your "security poison".
+
 **The just-in-case box**
 
 You should prepare for the worst and create a small box with printed information like:
@@ -44,7 +46,7 @@ You should prepare for the worst and create a small box with printed information
 * For the digital (crypto) paranoid:
   * [Yubi hardware encryption key](https://www.yubico.com/)
   * Server and/or desktop full disk encryption keys
-  * Screenshots of 2-factor QR-codes ([TOTP secrets](https://en.wikipedia.org/wiki/Time-based_one-time_password))
+  * Screenshots or copies of 2-factor QR-codes ([TOTP secrets](https://en.wikipedia.org/wiki/Time-based_one-time_password))
   * SSH private keys
 * ... and the list goes on and on
 
