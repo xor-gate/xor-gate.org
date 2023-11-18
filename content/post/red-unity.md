@@ -1,23 +1,25 @@
 ---
-title: "Not an Irish Red"
-date: 2023-11-11
+title: "Red Unity"
+date: 2023-11-18
 tags: ["beer", "homebrew"]
 ---
 
 So I had to get rid of some old malts. Did split some thin sparged wort and added 300 gr suger for a second beer. 
 
+![label](/images/red-unity/label.png)
+
 # Brewlog
 
-- [Bottle ID TBD](/post/beer-cellar/)
+- [Bottle ID 812](/post/beer-cellar/)
 - ABV 5.6% (75% efficiency)
 - IBU 27.5
 - EBC 15
-- Yeast: Fermentis Safale-US5 Dry Ale
+- Yeast: Fermentis SafAle-S04
 - Fermentor target: 30 liter
 
 **Mash scheme**
 
-[Single infusion low temperature mash for a dry beer](https://beerandgardeningjournal.com/mash-method-i/).
+[Single infusion low temperature mash for a dry beer](https://beerandgardeningjournal.com/mash-method-i/) with brew bag and solar pump for recirculation.
 
 | Type          | Time      | Temperature (celsius) |
 | ------------- | --------- | --------------------- |
@@ -45,6 +47,38 @@ Total 7,5 kg malts.
 
 # Pictures
 
-![Final result](/images/the-forgotten-red-ale/IMG_0243.jpg)
+![wort-pump](/images/red-unity/IMG_5545.jpeg)
 
-**Final result**
+**Solar pump for wort recirculation**
+
+![mash-in](/images/red-unity/IMG_5546.jpeg)
+
+**Mash in with brew bag**
+
+![start-color](/images/red-unity/IMG_5547.jpeg)
+
+**Mash-in color**
+
+![recirculate-60degr](/images/red-unity/IMG_5550.jpeg)
+
+**Mash-in low temperature**
+
+![mash-in-color](/images/red-unity/IMG_5555.jpeg)
+
+**Resulting color after some mash-in time**
+
+![sparge-wort](/images/red-unity/IMG_5558.jpeg)
+
+**Sparge and collect wort**
+
+![double-boil](/images/red-unity/IMG_5560.jpeg)
+
+**Two beers from one batch, right one is with different hops and sugar**
+
+![chiller](/images/red-unity/IMG_5561.jpeg)
+
+**Chiller**
+
+![siphon](/images/red-unity/IMG_5562.jpeg)
+
+**Siphon to fermenter**
