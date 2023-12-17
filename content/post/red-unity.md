@@ -1,6 +1,6 @@
 ---
 title: "Red Unity"
-date: 2023-11-18
+date: 2023-12-15
 tags: ["beer", "homebrew"]
 ---
 
@@ -10,7 +10,7 @@ So I had to get rid of some old malts. Did split some thin sparged wort and adde
 
 # Brewlog
 
-- [Bottle ID 812](/post/beer-cellar/)
+- [Bottle ID 231](/post/beer-cellar/)
 - ABV 5.6% (75% efficiency)
 - IBU 27.5
 - EBC 15

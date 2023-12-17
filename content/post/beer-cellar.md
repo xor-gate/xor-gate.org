@@ -6,16 +6,23 @@ tags: ["beer", "homebrew"]
 
 ![pale-fizzy-glass](/images/beer/pale-fizzy-glass.jpg)
 
-This post keeps a list of beers I have brewed with bottle numbers and links to the recipes. I use a bottle numbering scheme so I can keep track of the different beers without creating labels and the brews are unique. Bottle numbers are created on bottle day as follows: 
+This post keeps a list of beers I have brewed with bottle numbers and links to the recipes. I use a bottle numbering scheme so I can keep track of the different beers without creating labels and the brews are unique. 
+
+
+Bottle numbers are created on bottle day as follows (old style): 
 
 * For month 1-9: `<day (2 numbers)><month (1 number)>` 
 * For month 10-12: `<day (1 number)><month (2 numbers)>`
+
+New style:
+
+* `<year last two numbers><follow nr`
 
 They are sorted from new to old.
 
 | Bottle ID | Beer                                                                           | Bottled at |
 | --------- | ------------------------------------------------------------------------------ | ---------- |
-| 812       | [Red Unity](/post/red-unity/)                                                  | 2023-12-08 |
+| 231       | [Red Unity](/post/red-unity/)                                                  | 2023-12-15 |
 | 277       | [Jerry's Mr White](/post/jerrys-mr-white/)                                     | 2023-07-17 |
 | 176       | [Beer-n-grapes](/post/fruity-double-red-and-beer-n-grapes-beer-speriment/)     | 2023-06-16 |
 | 166       | [Double red fruity](/post/fruity-double-red-and-beer-n-grapes-beer-speriment/) | 2023-06-16 |
