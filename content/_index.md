@@ -7,6 +7,5 @@ title: "Home"
 
 Welcome to my personal blog!
 
-This blog contains notes about experiments I did and interests I have.
-
-All opinions on this site are my own and not from my employers. You may do whatever you like with the contents of this site as everything is released in the [Public Domain](https://en.wikipedia.org/wiki/Public_domain).
+This blog contains personal notes, interests and experiments.
+All opinions and ideas on this site are my own, or cited when otherwise. All content is released in the [Public Domain](https://en.wikipedia.org/wiki/Public_domain).

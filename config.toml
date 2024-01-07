@@ -55,11 +55,6 @@ defaultContentLanguage = "en"           # Default language to use
   identifier = "about"
   url = "/about"
 [[menu.main]]
-  name = "Pyrotechnics"
-  weight = 30
-  identifier = "pyrotechnics"
-  url = "/pyrotechnics"
-[[menu.main]]
   name = "Tags"
   weight = 40
   identifier = "tags"
