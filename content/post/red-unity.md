@@ -4,9 +4,7 @@ date: 2023-12-15
 tags: ["beer", "homebrew"]
 ---
 
-So I had to get rid of some old malts. Did split some thin sparged wort and added 300 gr suger for a second beer. 
-
-![label](/images/red-unity/label.png)
+So I had to get rid of some old malts. And came up with this irish-red like recipe.
 
 # Brewlog
 
@@ -15,7 +13,7 @@ So I had to get rid of some old malts. Did split some thin sparged wort and adde
 - IBU 27.5
 - EBC 15
 - Yeast: Fermentis SafAle-S04
-- Fermentor target: 30 liter
+- Fermentor target: ~30 liter
 
 **Mash scheme**
 

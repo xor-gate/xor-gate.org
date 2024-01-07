@@ -4,7 +4,7 @@ date: 2020-04-15
 tags: ["gardening", "recipes", "food"]
 ---
 
-So I harvested some awesome vegetables and need to hack a recipe together? So I came up with:
+So I harvested some awesome homegrown vegetables and needed to hack a recipe together? So I came up with:
 
 * [Smoked bacon](https://en.wikipedia.org/wiki/Bacon) approx 200gr
 * [Green Field Peas](https://en.wikipedia.org/wiki/Pea#Field_pea)
