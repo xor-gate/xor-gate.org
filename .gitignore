@@ -4,3 +4,4 @@ build
 resources
 .hugo_build.lock
 .*.swp
+.Ulysses-Settings.plist
