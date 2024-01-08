@@ -1,6 +1,6 @@
 ---
 title: "Breugels Bruin"
-date: 2024-01-07
+date: 2024-01-08
 tags: ["beer", "homebrew"]
 ---
 
@@ -35,14 +35,14 @@ Step mash single infusion with medium body mash scheme extra protein rest and th
 
 # Fermentables
 
-| Amount | Ingredient            | Color     |
-|--------|-----------------------|-----------|
-| 6 kg   | Ale                   | 7 EBC     |
-| 1.5 kg | Flaked oats           | 4 EBC     |
-| 1 kg   | CaraRed (Weijermann)  | 40-50 EBC |
-| 1 kg   | Caramel malt - Vienna | 30-60 EBC |
+| Amount | Ingredient            | Color         |
+|--------|-----------------------|---------------|
+| 6 kg   | Pale Ale              | 7 EBC         |
+| 1 kg   | CaraWheat (Weyermann) | 110 - 140 EBC |
+| 600 gr | Brown Sugar           | 38.5 EBC      |
+| 250 gr | Chateau chocolate     | 1000 EBC      |
 
-Total 7,85 kg fermentables.
+Total 7,25 kg malt.
 
 # Hops
 
@@ -52,6 +52,4 @@ Total 7,85 kg fermentables.
 | 10 min  | Boil      | 10 gr  | El Dorado | 11.7 AA (2.66 IBU)  |
 | 0 min   | Whirlpool | 25 gr  | El Dorado | 11.7 AA (4.88 IBU)  |
 
-# Pictures
 
-TODO
