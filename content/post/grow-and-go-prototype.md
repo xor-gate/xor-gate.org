@@ -35,7 +35,7 @@ I control the grow box humidity by leaving the lid with a small airgap by moving
 
 ![Led panel on cardboard with fan](/images/grow-and-go-box-proto/led_panel_cardboard_fan.jpg)
 
-**Growbox closed with [Nero](https://www.instagram.com/nero.the.cat.2021/) inspecting**
+**Growbox closed with [Nero](https://www.instagram.com/nero.the.cat.2021/) the cat inspecting**
 ![Growbox closed with cat](/images/grow-and-go-box-proto/growbox-closed-cat.jpg)
 
 **Philips Hue smartplug as timer**
