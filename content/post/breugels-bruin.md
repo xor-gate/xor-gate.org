@@ -22,16 +22,16 @@ tags: ["beer", "homebrew"]
 
 Step mash single infusion with medium body mash scheme extra protein rest and thick mash-in. Inspired by "The Brew Masters Bible page 68 - For a medium bodied beer".
 
-| Type                  | Time   | Temperature (celsius)                           |
-|-----------------------|--------|-------------------------------------------------|
-| Mash-in (thick)       | n/a    | 55 degree                                       |
-| Protein rest          | 10 min | 50 degree                                       |
-| Saccharification rest | 60 min | 67.7 degree                                     |
-| Iodine starch test    | n/a    |                                                 |
-| Mash-thinning         | n/a    | 75 degree (extra water addition)                |
-| Mash-out              | 10 min | 75 degree                                       |
-| Lautering & sparge    | n/a    | 75 degree (extra water addition until 32 liter) |
-| Boil                  | 60 min | 100 degree                                      |
+| Type                  | Time   | Temperature (celsius)                            |
+|-----------------------|--------|--------------------------------------------------|
+| Mash-in (thick)       | n/a    | 55 degree - 20 liters (2.5 liter/per kg malt)    |
+| Protein rest          | 10 min | 50 degree                                        |
+| Saccharification rest | 60 min | 67.7 degree                                      |
+| Iodine starch test    | n/a    |                                                  |
+| Mash-thinning         | n/a    | 75 degree (extra water addition)                 |
+| Mash-out              | 10 min | 75 degree                                        |
+| Lautering & sparge    | n/a    | 75 degree (extra water addition until ~32 liter) |
+| Boil                  | 60 min | 100 degree                                       |
 
 # Fermentables
 
