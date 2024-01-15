@@ -20,7 +20,7 @@ tags: ["beer", "homebrew"]
 
 **Mash scheme**
 
-Step mash single infusion with medium body mash scheme extra protein rest and thick mash-in. Inspired by "The Brew Masters Bible page 68 - For a medium bodied beer".
+Step mash single infusion with medium body mash scheme extra protein rest and thick mash-in. Inspired by "[The Brewmaster's Bible](https://www.amazon.com/Brewmasters-Bible-Gold-Standard-Brewers/dp/0060952164) - Step-Mashing - For a medium bodied beer".
 
 | Type                  | Time   | Temperature (celsius)                            |
 |-----------------------|--------|--------------------------------------------------|
