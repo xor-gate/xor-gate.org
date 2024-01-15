@@ -66,3 +66,9 @@ Total 7,25 kg malt.
 ![](/images/breugels-bruin/IMG_5838.jpeg)
 
 ![](/images/breugels-bruin/IMG_E5844.jpg)
+
+![](/images/breugels-bruin/IMG_E5826.jpeg)
+
+![](/images/breugels-bruin/IMG_E5840.jpeg)
+
+![](/images/breugels-bruin/IMG_E5843.jpeg)
