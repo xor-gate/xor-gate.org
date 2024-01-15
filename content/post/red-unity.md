@@ -1,10 +1,16 @@
 ---
 title: "Red Unity"
-date: 2023-12-15
+date: 2024-01-15
 tags: ["beer", "homebrew"]
 ---
 
-So I had to get rid of some old malts. And came up with this irish-red like recipe.
+So I had to get rid of some old malts. And came up with this irish-red IPA like recipe.
+
+![beer-result-with-foam](/images/red-unity/IMG_5846.jpg)
+
+![ussr-label](/images/red-unity/IMG_E5791.jpg)
+
+![ussr-label-on-bottles](/images/red-unity/IMG_E5799.jpg)
 
 # Brewlog
 
