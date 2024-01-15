@@ -1,20 +1,20 @@
 ---
 title: "Breugels Bruin"
-date: 2024-01-08
+date: 2024-01-15
 tags: ["beer", "homebrew"]
 ---
 
-
 # Brewlog
 
-- [Bottle ID 241](/post/beer-cellar/)
-- ABV 6.5% (75% efficiency)
-- IBU 33.6
-- EBC 40
-- OG 1.063
-- FG 1.014
-- Style Old Ale
-- Yeast: Fermentis Safbrew Abbaye BE-256
+- Bottle ID: [241](/post/beer-cellar/)
+- Brewed at: 14 Januari 2024
+- ABV: 6.5% (75% efficiency) -> measured after cool 11 Brix (5.8% ABV)
+- IBU: 33.6
+- EBC: 40
+- OG: 1.063
+- FG: 1.014
+- Style: [Old Ale](https://en.wikipedia.org/wiki/Old_ale)
+- Yeast: [Fermentis Safbrew Abbaye BE-256](https://fermentis.com/en/product/safale-be-256/)
 - Fermentor target: ~30 liter
 - [Brewers Friend recipe](https://www.brewersfriend.com/homebrew/recipe/view/1439265/breugels-bruin)
 
@@ -53,3 +53,16 @@ Total 7,25 kg malt.
 | 0 min   | Whirlpool | 25 gr  | El Dorado | 11.7 AA (4.88 IBU)  |
 
 
+# Pictures
+
+![](/images/breugels-bruin/IMG_5828.jpeg)
+
+![](/images/breugels-bruin/IMG_5836.jpeg)
+
+![](/images/breugels-bruin/IMG_5839.jpeg)
+
+![](/images/breugels-bruin/IMG_E5831.jpg)
+
+![](/images/breugels-bruin/IMG_5838.jpeg)
+
+![](/images/breugels-bruin/IMG_E5844.jpg)
