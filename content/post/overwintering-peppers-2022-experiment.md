@@ -4,6 +4,8 @@ date: 2022-09-24
 tags: ["gardening", "experiment", "plants", "peppers"]
 ---
 
+> NOTICE: This experiment failed again. The peppers where almost free of aphids. But probably central heating and darkness killed them. No more tries to overwinter peppers for me! I just sow them [very early in Januari](/post/peppers-2024/).
+
 So I finally found a [good overwintering peppers tutorial (Pepper Geek on Youtube)](https://www.youtube.com/watch?v=3wo3bwp5uQA&t=876s) with peppers plants grown outside. I'm going to try again and do my best to keep them alive until the 2023 grow season starts.
 
 Normally I had big issues with aphids because they did hide in the soil taken from outside to inside. Even after de-foliage and trimming the aphids got alive when new leafs where forming.
