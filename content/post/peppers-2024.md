@@ -11,20 +11,20 @@ I needed to add some cardboard between the petri dishes and heating mat because 
 
 ## Images
 
-**10 Januari 2024**
+**10 January 2024**
 
 ![2024-01-10_sowing.jpeg](/images/peppers-2024/2024-01-10_sowing.jpeg)
 ![2024-01-10_sowing_heatmat.jpg](/images/peppers-2024/2024-01-10_sowing_heatmat.jpg)
 
-**20 Januari 2024**
+**20 January 2024**
 
 ![2024-01-20_sprouts_petri.jpg](/images/peppers-2024/2024-01-20_sprouts_petri.jpg)
 ![2024-01-20_transplant.jpeg](/images/peppers-2024/2024-01-20_transplant.jpeg)
 
-**21 januari 2024**
+**21 January 2024**
 
 ![2024-01-21_seedlings_growlight.jpg](/images/peppers-2024/2024-01-21_seedlings_growlight.jpg)
 
-**28 Januari 2024**
+**28 January 2024**
 
 ![2024-01-28_seedlings.jpg](/images/peppers-2024/2024-01-28_seedlings.jpg)
