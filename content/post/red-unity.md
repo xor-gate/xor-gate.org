@@ -1,10 +1,14 @@
 ---
-title: "Red Unity"
-date: 2024-01-15
-tags: ["beer", "homebrew"]
+title: Red Unity
+date: 2024-03-01
+tags:
+  - beer
+  - homebrew
 ---
 
 So I had to get rid of some old malts. And came up with this irish-red IPA like recipe.
+
+![beer-result-final](/images/red-unity/IMG_5951.jpg)
 
 ![beer-result-with-foam](/images/red-unity/IMG_5846.jpg)
 
@@ -14,7 +18,7 @@ So I had to get rid of some old malts. And came up with this irish-red IPA like 
 
 # Brewlog
 
-- [Bottle ID 231](/post/beer-cellar/)
+- [Bottle ID 231](/post/beer-cellar/) + [Bottle ID 232](/post/beer-cellar/) (Extra dryhop)
 - ABV 5.6% (75% efficiency)
 - IBU 27.5
 - EBC 15

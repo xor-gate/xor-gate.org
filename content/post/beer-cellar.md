@@ -1,7 +1,9 @@
 ---
-title: "Beer Cellar"
-date: 2024-01-15
-tags: ["beer", "homebrew"]
+title: Beer Cellar
+date: 2024-03-01
+tags:
+  - beer
+  - homebrew
 ---
 
 ![pale-fizzy-glass](/images/beer/pale-fizzy-glass.jpg)
@@ -10,16 +12,17 @@ This post keeps a list of beers I have brewed with bottle numbers and links to t
 
 Bottle numbers are created on bottle day as follows (old style): 
 
-* New style (since 2023-12): `<year last two numbers><follow nr>`
+* New style (since 2023-12): `<year last two numbers (two digits)><follow nr (one digit)>`
 * Old numbering (before 2023-12):
-  * For month 1-9: `<day (2 numbers)><month (1 number)>` 
-  * For month 10-12: `<day (1 number)><month (2 numbers)>`
+  * For month 1-9: `<day (2 digits)><month (1 digit)>` 
+  * For month 10-12: `<day (1 digit)><month (2 digits)>`
 
-They are sorted from new to old.
+They are sorted from new too old.
 
 | Bottle ID | Beer                                                                           | Bottled at |
-|-----------|--------------------------------------------------------------------------------|------------|
-| 241       | [Breugels Bruin](/post/breugels-bruin/)                                        |            |
+| --------- | ------------------------------------------------------------------------------ | ---------- |
+| 241       | [Breugels Bruin](/post/breugels-bruin/)                                        | 2024-02-10 |
+| 232       | [Red Unity sparge IPA](/post/red-unity/)                                       | 2024-02-10 |
 | 231       | [Red Unity](/post/red-unity/)                                                  | 2023-12-15 |
 |           |                                                                                |            |
 | 277       | [Jerry's Mr White](/post/jerrys-mr-white/)                                     | 2023-07-17 |

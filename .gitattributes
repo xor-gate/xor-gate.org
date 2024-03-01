@@ -154,3 +154,4 @@
 /static/images/peppers-2024/2024-01-20_transplant.jpeg filter=lfs diff=lfs merge=lfs -text
 /static/images/peppers-2024/2024-01-21_seedlings_growlight.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/peppers-2024/2024-01-28_seedlings.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/red-unity/IMG_5951.jpg filter=lfs diff=lfs merge=lfs -text
