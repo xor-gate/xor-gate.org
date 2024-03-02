@@ -5,6 +5,7 @@ tags:
   - beer
   - homebrew
 ---
+![cat-communist](/images/red-unity/cat-communist.gif)
 
 So I had to get rid of some old malts. And came up with this irish-red IPA like recipe.
 
