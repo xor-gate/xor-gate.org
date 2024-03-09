@@ -156,3 +156,5 @@
 /static/images/peppers-2024/2024-01-28_seedlings.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/red-unity/IMG_5951.jpg filter=lfs diff=lfs merge=lfs -text
 /static/images/red-unity/cat-communist.gif filter=lfs diff=lfs merge=lfs -text
+/static/images/peppers-2024/2024-03-07_front_view_seedlings.jpg filter=lfs diff=lfs merge=lfs -text
+/static/images/peppers-2024/2024-03-07_top_view_seedlings.jpg filter=lfs diff=lfs merge=lfs -text
