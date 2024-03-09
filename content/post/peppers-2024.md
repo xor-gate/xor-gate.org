@@ -1,6 +1,6 @@
 ---
 title: Peppers '24
-date: 2024-01-28
+date: 2024-03-09
 tags:
   - gardening
 ---
@@ -28,3 +28,8 @@ I needed to add some cardboard between the petri dishes and heating mat because 
 **28 January 2024**
 
 ![2024-01-28_seedlings.jpg](/images/peppers-2024/2024-01-28_seedlings.jpg)
+
+**7 March 2024**
+
+![2024-03-07_front_view_seedlings.jpg](/images/peppers-2024/2024-03-07_front_view_seedlings.jpg)
+![2024-03-07_top_view_seedlings.jpg](/images/peppers-2024/2024-03-07_top_view_seedlings.jpg)
