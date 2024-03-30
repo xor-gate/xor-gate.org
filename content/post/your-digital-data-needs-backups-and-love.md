@@ -1,7 +1,10 @@
 ---
 title: Your digital data needs backups and love
 date: 2024-03-30
-tags: 
+tags:
+  - BSD
+  - open-source
+  - FreeBSD
 draft: false
 ---
 ![harddisk-closeup](/images/your-digital-data-needs-backups-and-love/patrick-lindenberg-1iVKwElWrPA-unsplash.jpg)
