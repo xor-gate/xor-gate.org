@@ -1,6 +1,6 @@
 ---
 title: Peppers '24
-date: 2024-03-27
+date: 2024-04-05
 tags:
   - gardening
 ---
@@ -49,3 +49,8 @@ Varieties
 **28 January 2024**
 
 ![2024-01-28_seedlings.jpg](/images/peppers-2024/2024-01-28_seedlings.jpg)
+
+**7 March 2024**
+
+![2024-03-07_front_view_seedlings.jpg](/images/peppers-2024/2024-03-07_front_view_seedlings.jpg)
+![2024-03-07_top_view_seedlings.jpg](/images/peppers-2024/2024-03-07_top_view_seedlings.jpg)
