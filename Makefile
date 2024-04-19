@@ -10,7 +10,5 @@ draft:
 	hugo --baseURL='https://draft.xor-gate.org/' --buildDrafts=true --destination build/draft
 draft-deploy: draft
 	rclone copy build/draft/ vserver271:domains/xor-gate.org/private_html
-theme:
-	git submodule update --init
 watch:
 	hugo server -w -D
