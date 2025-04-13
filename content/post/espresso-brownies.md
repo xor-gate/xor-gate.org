@@ -1,6 +1,7 @@
 ---
 title: "Espresso Brownies"
 date: 2020-03-29
+tags: ["recipes", "food"]
 ---
 
 As I like brownies and espresso, I created a recipe which uses raw espresso and cacoa powder. Hope you like it as I do :=)
