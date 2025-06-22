@@ -1,6 +1,6 @@
 ---
 title: Beer Cellar
-date: 2024-03-01
+date: 2025-06-22
 tags:
   - beer
   - homebrew
@@ -21,6 +21,10 @@ They are sorted from new too old.
 
 | Bottle ID | Beer                                                                           | Bottled at |
 | --------- | ------------------------------------------------------------------------------ | ---------- |
+| 252       | Happy, hoppy & Red                                                             | 2025-06-22 |
+| 254       | Sniper IPA                                                                     | 2025-05-02 |
+| 253       | Fruity weirdness                                                               | 2025-05-02 |
+| 251       | Red Saison                                                                     | 2025-05-02 |
 | 241       | [Breugels Bruin](/post/breugels-bruin/)                                        | 2024-02-10 |
 | 232       | [Red Unity sparge IPA](/post/red-unity/)                                       | 2024-02-10 |
 | 231       | [Red Unity](/post/red-unity/)                                                  | 2023-12-15 |
