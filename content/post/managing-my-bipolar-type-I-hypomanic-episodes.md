@@ -1,5 +1,5 @@
 ---
-title: Managing bipolar type I hypomanic episodes
+title: Managing bipolar type I in hypomanic episodes
 date: 2025-11-29
 tags:
   - experiment
