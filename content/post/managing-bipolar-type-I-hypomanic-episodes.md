@@ -1,6 +1,6 @@
 # A dark therapy experiment with blue light blocking glasses for managing bipolar disorder hypomanic episodes
 
-By [ing. Jerry J.J. Jacobs](https://xor-gate.org) published on February 2022. This text is published under the terms of [Public Domain license](https://en.wikipedia.org/wiki/Public_domain) and may be used wherever one sees fit.
+By [ing. Jerry J.J. Jacobs](https://linkedin.com/in/xorgate) published on February 2022. This text is published under the terms of [Public Domain license](https://en.wikipedia.org/wiki/Public_domain) and may be used wherever one sees fit.
 
 ## Conclusion
 
