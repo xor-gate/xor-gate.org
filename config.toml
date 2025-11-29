@@ -38,7 +38,7 @@ defaultContentLanguage = "en"           # Default language to use
   languageCode = "en"
 
 [params.author]                  # essential                     # 必需
-  name = "xor-gate & 作者 (xianmin)"
+  name = "Jerry Jacobs"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
