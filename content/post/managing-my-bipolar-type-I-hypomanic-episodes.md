@@ -9,17 +9,22 @@ tags:
   - serotin
   - eye-strain
   - light-sensitivity
+  - circadian rhythm
 ---
 
 # A dark therapy experiment with blue light blocking glasses for managing bipolar disorder hypomanic episodes
 
 By [ing. Jerry J.J. Jacobs](https://linkedin.com/in/xorgate) published on Saturday 29 November 2025 on [https://xor-gate.org/post/managing-bipolar-type-i-hypomanic-episodes](https://xor-gate.org/managing-bipolar-type-i-hypomanic-episodes). This text is published under the terms of [Public Domain license](https://en.wikipedia.org/wiki/Public_domain) and may be used wherever one sees fit.
 
+## Disclaimer
+
+
+
 ## Conclusion
 
 Blue blocking glasses are interesting and this experiment was conducted during two bipolar episodes within a period of 2 months. The glasses used block blue light for 99%, blue light controls the synthesis of the natural occurring sleep hormone melatonin. Melatonin is synthesised from the monoamine neurotransmitter serotonin. Olazapine was used during this experiment which controls also serotonin levels. The sleep hormone melatonin uses serotonin as its [precursor](https://www.youtube.com/watch?v=kCkZBSeOGH4).
 
-In the morning it is the most effective as there is a period of darkness before putting on the glasses. Keeping your eyes in "virtual darkness" preserves all produced melatonin.  As melatonin is a natural hormone for inducing sleep and no hangover was experienced from using the glasses. Blocking the blue light also reduced eye-strain. It is also is helpful to reduce the amount of Benzodiazepines used as a sleep and relaxing aid. A zen-like total calm feeling was experienced multiple times during the experiment. When putting on the glasses when getting out of bed early it felt most effective. Taking it off before the sun comes up to restore sleep-wake circadian rhythm.
+In the morning it is the most effective as there is a period of darkness before putting on the glasses. Keeping your eyes in "virtual darkness" preserves all produced melatonin.  As melatonin is a natural hormone for inducing sleep and no hangover was experienced from using the glasses. Blocking the blue light also reduced eye-strain. It is also is helpful to reduce the amount of Benzodiazepines used as a sleep and relaxing aid. A zen-like total calm feeling was experienced multiple times during the experiment. When putting on the glasses when getting out of bed early it felt most effective. Taking it off before the sun comes up to restore sleep-wake circadian rhythm. The blue blocking glasses MUST NOT be worn during daytime, because the circadian rhythm is a cycle based on the sun (wake-daytime-sleep).
 
 ## Abstract
 
@@ -167,4 +172,4 @@ This data is missing because minor depression was experience, busy at work and h
 
 ### Day #42 (11 feb 2022)
 
-This morning I woke up at 6:00h and felt rested on wake and slept for approximate 9h. I did put on the glasses to keep the zen-like feeling after rested on wake. The time when I take of the glasses is about 7:30 so I can get energised to start my normal day.
+This morning I woke up at 6:00h and felt rested on wake and slept for approximate 9h. I did put on the glasses to keep the zen-like feeling after rested on wake. The time when I take of the glasses is about 7:30h so I can get energised to start my normal day.
