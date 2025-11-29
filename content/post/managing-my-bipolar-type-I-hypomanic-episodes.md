@@ -6,7 +6,7 @@ tags:
   - health
   - blue light
   - melatonin
-  - serotin
+  - serotonin
   - eye-strain
   - light-sensitivity
   - circadian rhythm
