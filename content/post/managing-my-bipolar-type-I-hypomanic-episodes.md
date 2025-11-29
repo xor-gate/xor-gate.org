@@ -1,12 +1,26 @@
+---
+title: Managing bipolar type I hypomanic episodes
+date: 2025-11-29
+tags:
+  - experiment
+  - health
+  - blue light
+  - melatonin
+  - serotin
+  - eye-strain
+  - light-sensitivity
+---
+
 # A dark therapy experiment with blue light blocking glasses for managing bipolar disorder hypomanic episodes
 
-By [ing. Jerry J.J. Jacobs](https://linkedin.com/in/xorgate) published on February 2022. This text is published under the terms of [Public Domain license](https://en.wikipedia.org/wiki/Public_domain) and may be used wherever one sees fit.
+By [ing. Jerry J.J. Jacobs](https://linkedin.com/in/xorgate) published on Saturday 29 November 2025 on [https://xor-gate.org/post/managing-bipolar-type-i-hypomanic-episodes](https://xor-gate.org/managing-bipolar-type-i-hypomanic-episodes). This text is published under the terms of [Public Domain license](https://en.wikipedia.org/wiki/Public_domain) and may be used wherever one sees fit.
 
 ## Conclusion
 
 Blue blocking glasses are interesting and this experiment was conducted during two bipolar episodes within a period of 2 months. The glasses used block blue light for 99%, blue light controls the synthesis of the natural occurring sleep hormone melatonin. Melatonin is synthesised from the monoamine neurotransmitter serotonin. Olazapine was used during this experiment which controls also serotonin levels. The sleep hormone melatonin uses serotonin as its [precursor](https://www.youtube.com/watch?v=kCkZBSeOGH4).
 
 In the morning it is the most effective as there is a period of darkness before putting on the glasses. Keeping your eyes in "virtual darkness" preserves all produced melatonin.  As melatonin is a natural hormone for inducing sleep and no hangover was experienced from using the glasses. Blocking the blue light also reduced eye-strain. It is also is helpful to reduce the amount of Benzodiazepines used as a sleep and relaxing aid. A zen-like total calm feeling was experienced multiple times during the experiment. When putting on the glasses when getting out of bed early it felt most effective. Taking it off before the sun comes up to restore sleep-wake circadian rhythm.
+
 ## Abstract
 
 This experiment is conducted on myself for a period of 2 months.
