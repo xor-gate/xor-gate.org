@@ -10,6 +10,9 @@ tags:
   - eye-strain
   - light-sensitivity
   - circadian rhythm
+  - bi-polar
+  - manic-depressive
+draft: true
 ---
 
 # A dark therapy experiment with blue light blocking glasses for managing bipolar disorder hypomanic episodes
@@ -18,7 +21,7 @@ By [ing. Jerry J.J. Jacobs](https://linkedin.com/in/xorgate) published on Saturd
 
 ## Disclaimer
 
-
+x
 
 ## Conclusion
 
