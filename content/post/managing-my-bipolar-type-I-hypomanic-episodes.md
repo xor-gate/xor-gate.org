@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Managing bipolar type I in hypomanic episodes
 date: 2025-11-29
 tags:
@@ -12,7 +13,6 @@ tags:
   - circadian rhythm
   - bi-polar
   - manic-depressive
-draft: true
 ---
 
 # A dark therapy experiment with blue light blocking glasses for managing bipolar disorder hypomanic episodes
