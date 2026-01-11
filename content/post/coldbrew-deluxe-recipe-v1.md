@@ -5,7 +5,8 @@ tags:
   - recipes
   - experiment
   - homebrew
-draft: true
+draft: false
+toc: true
 ---
 This cold brew is creamy and caramel sweet, but you don't need a dentist appointment after consuming this delicious human rocket fuel concoction.
 ## ⚒️ Equipment
@@ -17,11 +18,11 @@ This cold brew is creamy and caramel sweet, but you don't need a dentist appoint
 * small glas tea cup and tea spoon
 * water boiler/kettle
 * spoon
-* For 
 * funnel 
 * coffee-filter holder for paper coffee filter
 * cheesecloth
 * sieve
+* paper masking tape + permanent marker (for label)
 
 ## 📋 Ingredient list
 
@@ -43,6 +44,7 @@ This sub-recipe is the "Classic Cold Brew Concentrate" it creates a strong conce
 | **Coffee Grounds** | 125g | 1 cup (whole beans) | Must be **coarsely ground** (like coarse cornmeal or sea salt) |
 | **Filtered Cold Water** | 1 Liter | 4 cups | Use filtered water for the best flavor |
 | **Ratio (Coffee:Water)** | **1:8** by weight | **1:4** by volume | This is a strong concentrate |
+
 ***WARNING***: You may consume this concentrate but be prepared for a panic attack because of the maximum amount of caffeine is extracted from the ground coffee. You will not sleep ;-).
 #### 🛠️ Brewing method
 
@@ -71,12 +73,17 @@ The liquid you made is a **concentrate** and is typically too strong to drink st
 2.  Add **1 part Cold Brew Concentrate** and **1 part cold water** or **milk** (dairy or non-dairy). An extra variant with a dash of dairy cream makes a dream!
 3.  Stir till it splashes and a vortex is seen and enjoy your beverage!
 
-## 🚀 Instructions for the Coldbrew Deluxe Recipe v2
+## 🚀 Instructions
 
-Create cane sugar concentrate (sirup) by boiling the 20 ml water in a water boiler or kettle. Place the 3 teaspoons (or ±12 gram) measured sugar in the tea cup and stir until all granules are dissolved. 
+Instructions how to brew the Coldbrew Deluxe Recipe v1.
 
-Combine all the ingredients in a vessel and stir with a spoon until uniform. Funnel it into the 1 liter swing top bottle and label with date of creation. Keeps around 1 week in the fridge.
+**Create cane sugar concentrate (sirup)**
 
+Start by boiling the 20 ml water in a water boiler or kettle. Place the 3 teaspoons (or ±12 gram) measured sugar in the tea cup and stir until all granules are dissolved. 
+
+**Combine all the ingredients** 
+
+In a vessel and stir with a spoon until uniform. Funnel it into the 1 liter swing top bottle and label with date of creation. Keeps around 1 week in the fridge. Don't forget to label the date with some masking tape and a permanent marker!
 ## 📸 Pictures
 
 ![](/images/coldbrew-deluxe-recipe-v1/IMG_0646_scaled.jpg)
